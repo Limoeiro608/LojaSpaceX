@@ -1,10 +1,10 @@
-@use '../helpers' as h;
+@use '../../scss/helpers' as h;
 
-.ExampleComponent {
+.HelloWorld {
 	font-weight: 700;
 	font-size: 30px;
 	color: h.$color-1;
 	@include h.min-lg {
-		color: red
+		color: pink
 	}
 }
