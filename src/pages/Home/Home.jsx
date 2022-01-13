@@ -1,17 +1,25 @@
-import { HelloWorld } from '../../components/HelloWorld/HelloWorld'
+import { Banner } from '../../components/Banner/Banner'
+import { Header } from '../../components/Header/Header'
+import { Footer } from '../../components/Footer/Footer'
 
 const Home = () => {
 	return (
 		<>
 			<header>
-				<div className='Region col-12'></div>
+				<div className='Region col-12'>
+					<Header/>
+				</div>	
 			</header>
 			<main>
 				<div className='Region col-12'>
-					<HelloWorld />
+					<Banner/>
 				</div>
 			</main>
-			<footer className='Region col-12'></footer>
+			<footer>
+				<div className='Region col-12'>
+					<Footer/>
+				</div>	
+			</footer>
 		</>
 	)
 }

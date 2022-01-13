@@ -6,4 +6,7 @@
 @use './base/normalize';
 
 // components
-@use  '../components/HelloWorld/hello-world';
+
+@use  '../components/Header/Header';
+@use  '../components/Footer/footer';
+@use  '../components/Banner/banner';
