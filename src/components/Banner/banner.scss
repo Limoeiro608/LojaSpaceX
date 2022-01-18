@@ -1,32 +1,33 @@
-.Banner{
-	margin: 10%
-	 auto;
-	@media(min-width:769px){
+.Banner {
+	margin: 10% auto;
+	@media (min-width: 769px) {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: center;
 		margin: 0;
-	}	
-}
-.Banner-Div{
-	display: flex;
-	@media(min-width:769px){
-		flex-direction: row;
-	}
-}
-.Banner-Div__img{
-	border-radius: 20px;
-	width: 87%;
-	margin: 23px auto;
-	max-width: 400px;
-	max-height: 240px;
-
-	&:hover{
-		box-shadow: 0 0 4px green;
 	}
 
-	@media(min-width:769px){
-		border-radius: 0;
-		margin: 8% 8%;
+	&-Div {
+		display: flex;
+		@media (min-width: 769px) {
+			flex-direction: row;
+		}
+	}
+	
+	&-Div__img {
+		border-radius: 20px;
+		width: 87%;
+		margin: 23px auto;
+		max-width: 400px;
+		max-height: 240px;
+
+		&:hover {
+			outline: 4px solid green;
+		}
+
+		@media (min-width: 769px) {
+			border-radius: 0;
+			margin: 8% 8%;
+		}
 	}
 }

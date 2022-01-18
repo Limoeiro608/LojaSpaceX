@@ -5,10 +5,9 @@ export const Banner = () =>{
     console.log("Iniciando...")
 
     function reconheceCat(cat){
-        //console.log(bind)
-        //console.log(cat)
+    
         if (cat === 'animal'){
-            console.log('imagine dragons')
+            console.log(cat,' | imagine dragons')
         }
         if (cat === 'tech'){
             console.log(cat)
