@@ -1,5 +1,6 @@
 .Banner {
 	margin: 10% auto;
+	
 	@media (min-width: 769px) {
 		display: flex;
 		flex-direction: row-reverse;
@@ -9,25 +10,26 @@
 
 	&-Div {
 		display: flex;
+
 		@media (min-width: 769px) {
 			flex-direction: row;
 		}
-	}
-	
-	&-Div__img {
-		border-radius: 20px;
-		width: 87%;
-		margin: 23px auto;
-		max-width: 400px;
-		max-height: 240px;
 
-		&:hover {
-			outline: 4px solid green;
-		}
+		&__img {
+			border-radius: 20px;
+			width: 87%;
+			margin: 23px auto;
+			max-width: 400px;
+			max-height: 240px;
 
-		@media (min-width: 769px) {
-			border-radius: 0;
-			margin: 8% 8%;
-		}
-	}
+			&:hover {
+				outline: 4px solid green;
+			}
+
+			@media (min-width: 769px) {
+				border-radius: 0;
+				margin: 8% 8%;
+			}
+		}	
+	}	
 }
