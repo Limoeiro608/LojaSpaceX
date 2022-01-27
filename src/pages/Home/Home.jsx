@@ -1,6 +1,6 @@
 import { Banner } from '../../components/Banner/Banner'
 import { Header } from '../../components/Header/Header'
-//import { Footer } from '../../components/Footer/Footer'
+import { Footer } from '../../components/Footer/Footer'
 
 const Home = () => {
 	return (
@@ -17,6 +17,7 @@ const Home = () => {
 			</main>
 			<footer>
 				<div className='Region col-12'></div>	
+					<Footer/>
 			</footer>
 		</>
 	)

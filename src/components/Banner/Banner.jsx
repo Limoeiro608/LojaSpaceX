@@ -2,7 +2,6 @@
 
 export const Banner = () =>{
 
-    console.log("Iniciando...")
 
     function reconheceCat(cat){
     

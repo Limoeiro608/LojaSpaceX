@@ -1,0 +1,12 @@
+.Footer__payments-metods__li{
+        margin: 0 10px 0 10px;
+
+    &:first-child{
+        margin: 0;
+    }
+
+    &:last-child{
+        margin: 0;
+    }
+    
+}
