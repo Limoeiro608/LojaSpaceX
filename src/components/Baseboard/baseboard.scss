@@ -1,0 +1,15 @@
+.Footer-content {
+    background: #181818;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    height: 60px;
+    padding: 18px 0;
+    width: 100%;
+
+    @media (min-width: 769px) {
+        font-size: 11px;
+        height: 40px;
+        padding: 12px 0;
+    }
+}
