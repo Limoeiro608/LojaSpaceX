@@ -1,7 +1,9 @@
+@use '../../scss/helpers' as h;
+
 .Banner {
 	margin: 10% auto;
 	
-	@media (min-width: 769px) {
+	@include h.min-md {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: center;
@@ -11,7 +13,7 @@
 	&-Div {
 		display: flex;
 
-		@media (min-width: 769px) {
+		@include h.min-md {
 			flex-direction: row;
 		}
 
@@ -26,7 +28,7 @@
 				outline: 4px solid green;
 			}
 
-			@media (min-width: 769px) {
+			@include h.min-md {
 				border-radius: 0;
 				margin: 8% 8%;
 			}

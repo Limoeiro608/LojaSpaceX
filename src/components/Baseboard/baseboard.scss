@@ -1,3 +1,5 @@
+@use '../../scss/helpers' as h;
+
 .Footer-content {
     background: #181818;
     color: #fff;
@@ -7,7 +9,7 @@
     padding: 18px 0;
     width: 100%;
 
-    @media (min-width: 769px) {
+    @include h.min-md {
         font-size: 11px;
         height: 40px;
         padding: 12px 0;

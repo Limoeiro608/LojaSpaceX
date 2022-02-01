@@ -1,8 +1,10 @@
+@use '../../scss/helpers' as h;
+
 .Footer {
 	background: #00518b;
 	padding-bottom: 90px;
 		
-		@media (min-width: 769px) {
+		@include h.min-md {
 			padding-bottom: 0px;
 		}
 
@@ -11,7 +13,7 @@
 		height: 28px !important;
 		margin: 53px 0;
 
-		@media (min-width: 769px) {
+		@include h.min-md {
 			margin: 85px 0px 0 0px;
 
 		}
@@ -22,19 +24,20 @@
 		font-size: 24px;
 		font-weight: 700;
 
-		@media (min-width: 769px) {
+		@include h.min-md {
 			margin-top: 50px;
 			font-size: 12px;
 		}
 	}
 
 	&-payments {
-		border-top:1px solid #fafafa2c;
-		margin: 25px auto 0px auto ;
-		padding-bottom: 29px;
+		display: none;
 
-		@media (max-width: 769px){
-			display: none;
+		@include h.min-md{
+			display: block;
+			border-top:1px solid #fafafa2c;
+			margin: 25px auto 0px auto ;
+			padding-bottom: 29px;
 		}
 
 		&__title {
@@ -57,7 +60,7 @@
 		height: 60px;
 		padding: 18px 0;
 
-		@media (min-width: 769px) {
+		@include h.min-md {
 			font-size: 11px;
 			height: 40px;
 			padding: 12px 0;
