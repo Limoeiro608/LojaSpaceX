@@ -3,8 +3,6 @@ export const PaymentsMetods = (props) =>{
 
     function reconheceMetod(props){
 
-
-    
        if (props.alt === 'boleto' || props.alt === 'bitcoin'){
             console.log('10% de desconto')
         }
@@ -17,7 +15,6 @@ export const PaymentsMetods = (props) =>{
             for(var i = 0; i<4; i++){
 
                 var result = answer[i].toFixed(2)
-
                 var toString = (String(result)).replace(".",",")
 
                 console.log(i+1," x ", toString)
@@ -29,6 +26,6 @@ export const PaymentsMetods = (props) =>{
         }
     }
 
-    return <li className='Footer__payments-metods__li'><a href={props.href}><img alt={props} onClick={reconheceMetod.bind('2',props)} src={props.src}/></a></li>
+    return <li className='Footer-payments-metods__li'><a href={props.href}><img alt={props} onClick={reconheceMetod.bind('2',props)} src={props.src}/></a></li>
 
 }

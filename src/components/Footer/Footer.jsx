@@ -28,18 +28,22 @@ export const Footer = () => {
                     <div className='Footer-payments'>
                         <div className='row'>
                             <div className='col'>
-                                <h3 className='Footer-payments__title text-end'>Formas de Pagamento</h3>
-                                <ul className='Footer-payments__ul d-flex justify-content-end'>
-                                    <PaymentsMetods href='#' alt='boleto' src={Boleto} />
-                                    <PaymentsMetods href='#' alt='bitcoin' src={Bitcoin} />
-                                    <PaymentsMetods href='#' alt='master card' src={MasterCard} />
-                                </ul>
+                                <div className='text-end'>
+                                    <h3 className='Footer-payments__title '>Formas de Pagamento</h3>
+                                </div>
+                                <div className='Footer-payments__ul'>
+                                    <ul className=' d-flex justify-content-end'>
+                                        <PaymentsMetods href='#' alt='boleto' src={Boleto} />
+                                        <PaymentsMetods href='#' alt='bitcoin' src={Bitcoin} />
+                                        <PaymentsMetods href='#' alt='master card' src={MasterCard} />
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Baseboard/>
+            <Baseboard />
         </>
     );
 }

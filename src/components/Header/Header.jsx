@@ -5,8 +5,18 @@ import ImgCart from '../../assets/img/cart.png'
 export const Header = () =>{
     return (
         <div className="Header">
-            <img className='Header__logo' src={ImgLogo} alt='logo'/>
-            <img className='Header__cart' src={ImgCart} alt='Cart'/>
+            <div className='container-fluid'>
+                <div className='row'>
+                    <div className='col-10 col-md-11'>
+                        <img className='Header-logo' src={ImgLogo} alt='logo'/>
+                    </div>
+                    <div className='col-2 col-md-1 align-items-end'>
+                        <img className='Header-cart' src={ImgCart} alt='Cart'/>
+                    </div>
+                </div>
+            </div>
+           
+           
         </div>
     )  
 

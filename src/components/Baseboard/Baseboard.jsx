@@ -2,7 +2,7 @@
 export const Baseboard = () => {
 
     return (
-        <div className='Footer-content  text-center'>
+        <div className='Baseboard  text-center'>
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col'>

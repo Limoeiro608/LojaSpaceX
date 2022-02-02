@@ -3,8 +3,9 @@
 .Footer {
 	background: #00518b;
 	padding-bottom: 90px;
-		
+	height: 440px;	
 		@include h.min-md {
+			height: 340px;
 			padding-bottom: 0px;
 		}
 
@@ -23,9 +24,11 @@
 		color: #fff;
 		font-size: 24px;
 		font-weight: 700;
+		margin-bottom: 15px;
 
 		@include h.min-md {
 			margin-top: 50px;
+			margin-bottom: 8px;
 			font-size: 12px;
 		}
 	}
@@ -37,7 +40,6 @@
 			display: block;
 			border-top:1px solid #fafafa2c;
 			margin: 25px auto 0px auto ;
-			padding-bottom: 29px;
 		}
 
 		&__title {
