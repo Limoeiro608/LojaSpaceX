@@ -1,9 +1,16 @@
 // helpers
 @use './helpers/mixins';
+//@use './helpers/variables';
 
 // base
 @use './base/reset';
 @use './base/normalize';
 
 // components
-@use  '../components/HelloWorld/hello-world';
+
+@use  '../components/Header/Header';
+@use  '../components/Footer/footer';
+@use  '../components/Banner/banner';
+@use '../components/Link/link';
+@use '../components/PaymentsMetods/payment-metods';
+@use '../components/Baseboard/baseboard';

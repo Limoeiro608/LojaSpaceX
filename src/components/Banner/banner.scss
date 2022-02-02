@@ -1,0 +1,37 @@
+@use '../../scss/helpers' as h;
+
+.Banner {
+	margin: 10% auto;
+	
+	@include h.min-md {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin: 0;
+	}
+
+	&-Div {
+		display: flex;
+
+		@include h.min-md {
+			flex-direction: row;
+		}
+
+		&__img {
+			border-radius: 20px;
+			width: 87%;
+			margin: 23px auto;
+			max-width: 400px;
+			max-height: 240px;
+
+			&:hover {
+				outline: 4px solid green;
+			}
+
+			@include h.min-md {
+				border-radius: 0;
+				margin: 8% 8%;
+			}
+		}	
+	}	
+}

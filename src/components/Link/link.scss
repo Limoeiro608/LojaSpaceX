@@ -1,0 +1,25 @@
+@use '../../scss/helpers' as h;
+
+.Footer-link{
+    margin: 15px 0;
+    height: 25px;
+
+    @include h.min-md{
+        margin: 8px 0;
+        }
+
+    &__a{
+        text-decoration: none;
+        color:#fff ;
+        font-size: 18px;
+        font-weight: 400;
+        
+        @include h.min-md{
+        font-size: 12px;
+        }
+
+    }
+
+    
+
+}
