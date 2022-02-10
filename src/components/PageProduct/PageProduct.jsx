@@ -7,9 +7,7 @@ import { InformationP } from './InformationP';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-//library.add(fas)
-
-//const cart = <FontAwesomeIcon icon="cart-shopping" />
+library.add(fas)
 
 export const PageProduct = () => {
 
@@ -31,8 +29,8 @@ export const PageProduct = () => {
                     />
                 </div>
                 <div>
-                    <Button className={'Button Button--green Button--fontExo'} label={'Adicionar ao Carrinho'} />
-                    <Button className={'Button Button--fontInter'} label={'Adicionar a Lista de Interesses'} />
+                    <Button className={'Button Button--green Button--fontExo'}><FontAwesomeIcon icon="cart-shopping"/>  Adicionar ao Carrinho</Button>
+                    <Button className={'Button Button--fontInter'}>Adicionar a Lista de Interesses</Button>
                 </div>
                 <div>
                     <div>

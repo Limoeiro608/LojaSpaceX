@@ -4,10 +4,20 @@
     .Product-img {
         width: 94%;
         height: 94%;
+
+        @include h.min-md {
+            max-width: 644px;
+            max-height: 644px;
+        }
     }
 
     .HeaderProduct {
-        font-family: 'Exo', sans-serif;
+        font-family: "Exo", sans-serif;
+
+        @include h.min-md {
+            max-width: 423px;
+            max-height: 544px;
+        }
 
         &-title {
             color: #115292;
@@ -50,7 +60,7 @@
     }
 
     .DetailsProduct {
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
 
         &-title {
             font-weight: bold;
@@ -60,17 +70,17 @@
         }
 
         &-container {
-            margin: 25px auto;   
+            margin: 25px auto;
         }
 
         &-subtitle {
-                font-weight: bold;
-                font-size: 18px;
-            }
+            font-weight: bold;
+            font-size: 18px;
+        }
 
-            &-paragraph {
-                font-size: 14px;
-                font-weight: 500;
-            }
+        &-paragraph {
+            font-size: 14px;
+            font-weight: 500;
+        }
     }
 }
