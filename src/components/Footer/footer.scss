@@ -1,15 +1,15 @@
-@use '../../scss/helpers' as h;
+@use "../../scss/helpers" as h;
 
 .Footer {
 	background: #00518b;
 	padding-bottom: 90px;
-	height: 440px;	
-	font-family: 'Open Sans', sans-serif;
+	height: 440px;
+	font-family: "Open Sans", sans-serif;
 
-		@include h.min-md {
-			height: 340px;
-			padding-bottom: 0px;
-		}
+	@include h.min-md {
+		height: 340px;
+		padding-bottom: 0px;
+	}
 
 	&-logo {
 		width: 226px !important;
@@ -18,30 +18,56 @@
 
 		@include h.min-md {
 			margin: 85px 0px 0 0px;
-
 		}
 	}
 
-	.MenuFooter-subtatile {
-		color: #fff;
-		font-size: 24px;
-		font-weight: 700;
-		margin-bottom: 15px;
+	.MenuFooter {
+		&-subtatile {
+			color: #fff;
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 15px;
 
-		@include h.min-md {
-			margin-top: 50px;
-			margin-bottom: 8px;
-			font-size: 12px;
+			@include h.min-md {
+				margin-top: 50px;
+				margin-bottom: 8px;
+				font-size: 12px;
+			}
+		}
+
+		&-link {
+			margin: 15px 0;
+			height: 25px;
+
+			@include h.min-md {
+				margin: 8px 0;
+			}
+
+			&__a {
+				text-decoration: none;
+				color: #fafafa;
+				font-size: 18px;
+				font-weight: 400;
+
+				&:hover {
+					color: #fff;
+					transition-duration: 1s;
+				}
+
+				@include h.min-md {
+					font-size: 12px;
+				}
+			}
 		}
 	}
 
 	&-payments {
 		display: none;
 
-		@include h.min-md{
+		@include h.min-md {
 			display: block;
-			border-top:1px solid #fafafa2c;
-			margin: 25px auto 0px auto ;
+			border-top: 1px solid #fafafa2c;
+			margin: 25px auto 0px auto;
 		}
 
 		&__title {
@@ -51,8 +77,8 @@
 			margin: 23px 60px 16px 0;
 		}
 
-		&__ul{
-			margin-right:59px ;
+		&__ul {
+			margin-right: 59px;
 		}
 	}
 
