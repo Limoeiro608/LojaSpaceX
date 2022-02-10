@@ -10,9 +10,14 @@
 
     &__a{
         text-decoration: none;
-        color:#fff ;
+        color: #FAFAFA;
         font-size: 18px;
         font-weight: 400;
+
+        &:hover{
+            color:#fff;
+            transition-duration: 1s;
+        }
         
         @include h.min-md{
         font-size: 12px;

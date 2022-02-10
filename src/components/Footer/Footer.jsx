@@ -1,5 +1,5 @@
 import ImgLogo from '../../assets/img/space-logo-footer.png'
-import { Link } from '../Link/Link'
+import { MenuFooter } from './MenuFooter';
 import { PaymentsMetods } from '../PaymentsMetods/PaymentsMetods';
 import Boleto from '../../assets/img/boleto.png'
 import Bitcoin from '../../assets/img/bitcoin.png'
@@ -17,13 +17,7 @@ export const Footer = () => {
                         <div className='col-md-4'>
                             <img className='Footer-logo' src={ImgLogo} alt='logo' />
                         </div>
-                        <div className='col-md-8 text-md-start'>
-                            <h3 className='Footer-subtatile'> Institucional</h3>
-                            <Link href='#' nome='Termos de uso' />
-                            <Link href='#' nome='Politica de Privacidade' />
-                            <Link href='#' nome='Formas de Pagamento' />
-                            <Link href='#' nome='Trocas e Devoluções' />
-                        </div>
+                        <MenuFooter/>
                     </div>
                     <div className='Footer-payments'>
                         <div className='row'>
