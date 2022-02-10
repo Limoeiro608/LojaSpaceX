@@ -17,7 +17,9 @@ export const Footer = () => {
                         <div className='col-md-4'>
                             <img className='Footer-logo' src={ImgLogo} alt='logo' />
                         </div>
-                        <MenuFooter/>
+                        <div className='col-md-8 text-md-start'>
+                            <MenuFooter/>  
+                        </div>
                     </div>
                     <div className='Footer-payments'>
                         <div className='row'>

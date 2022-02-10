@@ -1,6 +1,6 @@
 @use '../../scss/helpers' as h;
 
-.Footer-link{
+.MenuFooter-link{
     margin: 15px 0;
     height: 25px;
 
@@ -22,7 +22,6 @@
         @include h.min-md{
         font-size: 12px;
         }
-
     }
 
     
