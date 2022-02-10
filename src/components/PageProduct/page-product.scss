@@ -1,0 +1,76 @@
+@use "../../scss/helpers" as h;
+
+.PageProduct {
+    .Product-img {
+        width: 94%;
+        height: 94%;
+    }
+
+    .HeaderProduct {
+        font-family: 'Exo', sans-serif;
+
+        &-title {
+            color: #115292;
+            font-size: 28px;
+            font-weight: 600px;
+        }
+
+        &-weight {
+            font-weight: 500;
+            font-size: 13px;
+            color: #666666;
+        }
+
+        &-prices {
+            display: flex;
+            align-items: center;
+
+            &__last {
+                font-size: 16px !important;
+                line-height: 21px;
+                text-decoration-line: line-through;
+                color: #b3b3b3;
+            }
+
+            &__current {
+                font-size: 28px;
+                line-height: 36px;
+                color: #115292;
+                font-weight: bold;
+            }
+        }
+
+        &-howManyTimes {
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 25px;
+            position: relative;
+            bottom: 10px;
+        }
+    }
+
+    .DetailsProduct {
+        font-family: 'Inter', sans-serif;
+
+        &-title {
+            font-weight: bold;
+            font-size: 24px;
+            color: #00518b;
+            margin: 40px 0 20px 0;
+        }
+
+        &-container {
+            margin: 25px auto;   
+        }
+
+        &-subtitle {
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            &-paragraph {
+                font-size: 14px;
+                font-weight: 500;
+            }
+    }
+}

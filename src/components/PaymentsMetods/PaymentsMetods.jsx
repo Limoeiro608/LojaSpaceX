@@ -26,6 +26,6 @@ export const PaymentsMetods = (props) =>{
         }
     }
 
-    return <li className='Footer-payments-metods__li'><a href={props.href}><img alt={props} onClick={reconheceMetod.bind('2',props)} src={props.src}/></a></li>
+    return <li className='Footer-payments-metods__li'><a href={props.href}><img alt={props.alt} onClick={reconheceMetod.bind('2',props)} src={props.src}/></a></li>
 
 }

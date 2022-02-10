@@ -1,41 +1,88 @@
-@use '../../scss/helpers' as h;
+@use "../../scss/helpers" as h;
 
-.Header{
+.Header {
+	font-family: "Nunito", sans-serif;
 	width: 100%;
 	height: 70px;
 	margin-bottom: 50px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
 
-	@include h.min-md{
+	@include h.min-md {
 		height: 80px;
-		background:#FAFAFA;
+		background: #fafafa;
 		margin-bottom: 30px;
 		padding-bottom: 120px;
-
 	}
 
-	&-logo{
+	&-logo {
 		width: 244px;
 		height: 30px;
 		margin: 20px 0 0 24px;
 
-		@include h.min-md{
+		@include h.min-md {
 			width: 350px;
 			height: 43px;
 			margin: 16px 0 0 40px;
 		}
 	}
 
-	&-cart{
-		width:30px;
+	&-cart {
+		width: 30px;
 		height: 26px;
-		margin: 23px 21px 0 0 ;
+		margin: 23px 21px 0 0;
 
-		@include h.min-md{
+		@include h.min-md {
 			width: 33px;
 			height: 29px;
-			margin: 28px 66px 0 0 ;
+			margin: 28px 66px 0 0;
 		}
-
 	}
 
+	&-nav {
+		display: none;
+
+		@include h.min-md {
+			display: block;
+
+			&__div {
+				display: flex;
+				margin-top: 22px;
+				font-size: 14px;
+				align-items: center;
+
+				img {
+					max-width: 13px;
+					max-height: 15px;
+				}
+			}
+
+			&__first-child {
+				font-size: 11px;
+				padding-left: 8px;
+			}
+
+			&__middle-child {
+				justify-content: space-between;
+			}
+
+			&__last-child {
+				justify-content: end;
+				font-size: 16px;
+				padding-right: 40px;
+
+				@include h.min-lg {
+					font-size: 20px;
+					position: relative;
+					bottom: 3px;
+				}
+			}
+
+			&__a {
+				margin-left: 8px;
+				margin-right: 8px;
+				text-decoration: none;
+				color: #00518b;
+			}
+		}
+	}
 }
