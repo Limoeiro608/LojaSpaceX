@@ -1,8 +1,7 @@
 @use "../../scss/helpers" as h;
 
 .Button {
-    width: 100%;
-    height: 48px;
+    @include h.size(100%,48px);
     margin: 10px auto;
     border-radius: 8px;
     border: 1px solid #00518b;

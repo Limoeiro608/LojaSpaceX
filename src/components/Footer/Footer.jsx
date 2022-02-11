@@ -1,6 +1,6 @@
 import ImgLogo from '../../assets/img/space-logo-footer.png'
 import { MenuFooter } from './MenuFooter';
-import { PaymentsMetods } from '../PaymentsMetods/PaymentsMetods';
+import { PaymentsMetods } from './PaymentsMetods';
 import Boleto from '../../assets/img/boleto.png'
 import Bitcoin from '../../assets/img/bitcoin.png'
 import MasterCard from '../../assets/img/master-card.png'
@@ -21,13 +21,13 @@ export const Footer = () => {
                             <MenuFooter/>  
                         </div>
                     </div>
-                    <div className='Footer-payments'>
+                    <div className='FooterPayments'>
                         <div className='row'>
                             <div className='col'>
                                 <div className='text-end'>
-                                    <h3 className='Footer-payments__title '>Formas de Pagamento</h3>
+                                    <h3 className='FooterPayments-title '>Formas de Pagamento</h3>
                                 </div>
-                                <div className='Footer-payments__ul'>
+                                <div className='FooterPayments-ul'>
                                     <ul className=' d-flex justify-content-end'>
                                         <PaymentsMetods href='#' alt='boleto' src={Boleto} />
                                         <PaymentsMetods href='#' alt='bitcoin' src={Bitcoin} />
