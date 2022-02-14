@@ -1,7 +1,7 @@
 import React from 'react'
 import ImgLogo from '../../assets/img/space-logo.png'
 import ImgCart from '../../assets/img/cart.png'
-import { NavBar } from './NavBar'
+import { NavMenu } from './NavMenu'
 
 
 export const Header = () => {
@@ -16,7 +16,7 @@ export const Header = () => {
                         <img className='Header-cart' src={ImgCart} alt='Cart' />
                     </div>
                 </div>
-                <NavBar/>
+                <NavMenu/>
             </div>
         </div>
     )

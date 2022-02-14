@@ -2,7 +2,7 @@ import { NavLink } from "./NavLink";
 import ImgPoint from '../../assets/img/map-pointer.png'
 import ImgMobile from '../../assets/img/mobile.png'
 
-export const NavBar = () => {
+export const NavMenu = () => {
 
     return (
         <ul className='Header-nav'>
