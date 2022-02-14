@@ -2,7 +2,7 @@
 
 .PageProduct {
     .Product-img {
-        @include h.size(94%,94%);
+        @include h.size(94%, 94%);
 
         @include h.min-md {
             max-width: 644px;
@@ -24,10 +24,9 @@
             font-size: 28px;
             font-weight: 600px;
 
-            @include h.min-md{
-               @include h.truncate(423px,2); 
+            @include h.min-md {
+                @include h.truncate(423px, 2);
             }
-            
         }
 
         &-weight {
@@ -61,6 +60,12 @@
             margin-bottom: 25px;
             position: relative;
             bottom: 10px;
+        }
+
+        &-textJS {
+            color: #115292;
+            font-size: 16px;
+            max-width: 423px;
         }
     }
 
