@@ -6,7 +6,7 @@ export const Baseboard = () => {
             <div className='container-fluid text-center'>
                 <div className='row'>
                     <div className='col'>
-                        <p className="Baseboard-p">©2021 – Todos os direitos reservados</p>
+                        <span className="Baseboard-copyright">©2022 – Todos os direitos reservados</span>
                     </div>
                 </div>
             </div>

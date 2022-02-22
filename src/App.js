@@ -6,7 +6,7 @@ function App() {
   return (
 		<Router>
 			<Switch>
-				<Route path='/' exact component={Home} />
+				<Route path='/Home' exact component={Home} />
 				<Route path='/PDP' exact component={PDP} />
 			</Switch>
 		</Router>

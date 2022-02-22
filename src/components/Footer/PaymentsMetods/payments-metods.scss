@@ -1,0 +1,35 @@
+@use "../../../scss/helpers" as h;
+
+.FooterPayments {
+    display: none;
+
+    @include h.min-md {
+        display: block;
+        border-top: 1px solid #fafafa2c;
+        margin: 25px auto 0px auto;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 12px;
+        color: #fafafa;
+        margin: 23px 60px 16px 0;
+    }
+
+    &-list {
+        margin-right: 59px;
+
+        &__item{
+            margin: 0 10px 0 10px;
+        
+            &:first-child{
+                margin: 0;
+            }
+        
+            &:last-child{
+                margin: 0;
+            }
+            
+        }
+    }
+}

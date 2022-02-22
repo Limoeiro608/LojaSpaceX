@@ -18,14 +18,14 @@ export const Banner = () =>{
 
     return(
         <div className="Banner">
-            <div className="Banner-Div">
-                <img className="Banner-Div__img" alt='animal' onClick={reconheceCat.bind('1','animal')} src="https://placeimg.com/400/240/animals"/>
+            <div className="Banner-Container">
+                <img className="Banner-Container__picture" alt='animal' onClick={reconheceCat.bind('1','animal')} src="https://placeimg.com/400/240/animals"/>
             </div>
-            <div className="Banner-Div">
-                <img className="Banner-Div__img" alt='tech' onClick={reconheceCat.bind('1','tech')} src="https://placeimg.com/400/240/tech"/>
+            <div className="Banner-Container">
+                <img className="Banner-Container__picture" alt='tech' onClick={reconheceCat.bind('1','tech')} src="https://placeimg.com/400/240/tech"/>
             </div>
-            <div className="Banner-Div">
-                <img className="Banner-Div__img" alt='nature' onClick={reconheceCat.bind('1','nature')} src="https://placeimg.com/400/240/nature"/>
+            <div className="Banner-Container">
+                <img className="Banner-Container__picture" alt='nature' onClick={reconheceCat.bind('1','nature')} src="https://placeimg.com/400/240/nature"/>
             </div>
         </div>
     );

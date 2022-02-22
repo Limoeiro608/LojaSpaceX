@@ -1,9 +1,7 @@
 @use "../../scss/helpers" as h;
 
 .Footer {
-	background: #00518b;
-	//padding-bottom: 90px;
-	//height: 440px;	
+	background: #00518b;	
 	margin-top: 50px;
 	font-family: 'Open Sans', sans-serif;
 
@@ -21,89 +19,7 @@
 		}
 	}
 
-	.MenuFooter {
-		margin-bottom: 42px;
 
-		@include h.min-md{
-			margin-bottom: 0;
-		}
-
-		&-subtatile {
-			color: #fff;
-			font-size: 24px;
-			font-weight: 700;
-			margin-bottom: 15px;
-
-			@include h.min-md {
-				margin-top: 50px;
-				margin-bottom: 8px;
-				font-size: 12px;
-			}
-		}
-
-		&-ul{
-			padding: 0;
-		}
-
-		&-link {
-			margin: 15px 0;
-			height: 25px;
-
-			@include h.min-md {
-				margin: 8px 0;
-			}
-
-			&__a {
-				text-decoration: none;
-				color: #fafafa;
-				font-size: 18px;
-				font-weight: 400;
-
-				&:hover {
-					color: #fff;
-					transition-duration: 1s;
-				}
-
-				@include h.min-md {
-					font-size: 12px;
-				}
-			}
-		}
-	}
-
-	.FooterPayments {
-		display: none;
-
-		@include h.min-md {
-			display: block;
-			border-top: 1px solid #fafafa2c;
-			margin: 25px auto 0px auto;
-		}
-
-		&-title {
-			font-weight: 700;
-			font-size: 12px;
-			color: #fafafa;
-			margin: 23px 60px 16px 0;
-		}
-
-		&-ul {
-			margin-right: 59px;
-
-			&__li{
-				margin: 0 10px 0 10px;
-			
-				&:first-child{
-					margin: 0;
-				}
-			
-				&:last-child{
-					margin: 0;
-				}
-				
-			}
-		}
-	}
 
 	&__content {
 		background: #181818;

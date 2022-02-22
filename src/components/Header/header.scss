@@ -2,7 +2,7 @@
 
 .Header {
 	font-family: "Nunito", sans-serif;
-	@include h.size(100%,70px);
+	height: 70px;
 	margin-bottom: 50px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
 
@@ -15,72 +15,22 @@
 
 	&-logo {
 		@include h.size(244px,30px);
-		margin: 20px 0 0 24px;
+		margin-top: 20px;
 
 		@include h.min-md {
 			@include h.size(350px,43px);
-			margin: 16px 0 0 40px;
+			margin-top: 16px;
 		}
 	}
 
 	&-cart {
 		@include h.size(30px,26px);
-		margin: 23px 21px 0 0;
+		margin-top: 23px;
 
 		@include h.min-md {
 			width: 33px;
 			height: 29px;
-			margin: 28px 66px 0 0;
-		}
-	}
-
-	&-nav {
-		display: none;
-
-		@include h.min-md {
-			display: block;
-
-			&__div {
-				display: flex;
-				margin-top: 22px;
-				font-size: 14px;
-				align-items: center;
-
-				img {
-					max-width: 13px;
-					max-height: 15px;
-				}
-			}
-
-			&__first-child {
-				font-size: 11px;
-				padding-left: 8px;
-				font-weight: 600;
-			}
-
-			&__middle-child {
-				justify-content: space-between;
-				font-weight: 600;
-			}
-
-			&__last-child {
-				justify-content: end;
-				font-size: 16px;
-				padding-right: 40px;
-
-				@include h.min-lg {
-					font-size: 20px;
-					position: relative;
-					bottom: 3px;
-				}
-			}
-
-			&__a {
-				margin-left: 8px;
-				margin-right: 8px;
-				text-decoration: none;
-				color: #00518b;
-			}
+			margin-top: 28px;
 		}
 	}
 }

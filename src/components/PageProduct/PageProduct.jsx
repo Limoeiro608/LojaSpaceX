@@ -1,9 +1,9 @@
 import { Button } from '../Button/Button'
 import ImgHelmet from '../../assets/img/helmet.png'
-import { ImgProduct } from './ImgProduct'
-import { HeaderProduct } from './HeaderProduct'
+import { ImgProduct } from './ImgProduct/ImgProduct'
+import { HeaderProduct } from './HeaderProduct/HeaderProduct'
 import { Container } from 'reactstrap'
-import { InformationP } from './InformationP'
+import { InformationP } from './InformationP/InformationP'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -26,19 +26,18 @@ export const PageProduct = () => {
     return (
         <Container>
             <section className='PageProduct'>
-                <div className='d-md-flex'>
-                    <div>
+                <div className='row'>
+                    <div className='col-md-7'>
                         <ImgProduct src={ImgHelmet} alt='capacete' />
                     </div>
-                    <div className='flex-column'>
+                    <div className='col-md-5'>
                         <div>
                             <HeaderProduct
-                                title={'Capacete Espacial Lorem Ipsum Dolor Sit'}
-                                weight={'1200'}
-                                lastPrice={'999,00'}
-                                currentPrice={'890,00'}
-                                howManyTimes={'5'}
-                                howMuch={'178,00'}
+                                title={product.title}
+                                weight={product.smallDescription}
+                                lastPrice={product.oldPrice}
+                                currentPrice={product.price}
+                                howManyTimes={'5 x R$ 178,00 s/ juros no cartão de crédito'}
                             />
                         </div>
                         <div>
@@ -50,7 +49,6 @@ export const PageProduct = () => {
                                 PROMOÇÃO RELÂMPAGO: Compre agora o {product.title} de {product.oldPrice} por apenas {product.price}!
                             </spawn> : null}
                         </div>
-
                     </div>
                 </div>
                 <div>
