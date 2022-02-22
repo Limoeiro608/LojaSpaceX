@@ -11,5 +11,11 @@
 @use  '../components/Header/Header';
 @use  '../components/Footer/footer';
 @use  '../components/Banner/banner';
-@use '../components/PaymentsMetods/payment-metods';
-@use '../components/Baseboard/baseboard';
+@use '../components/Header/NavMenu/navmenu';
+@use '../components/Footer/MenuFooterItem/menu-footer-item';
+@use '../components/Footer/Baseboard/baseboard';
+@use '../components/Footer/PaymentsMetods/payments-metods';
+@use '../components/PageProduct/HeaderProduct/header-product';
+@use '../components/PageProduct/ImgProduct/img-product';
+@use '../components/PageProduct/InformationP/information-product';
+@use '../components/Button/button';

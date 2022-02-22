@@ -1,41 +1,36 @@
-@use '../../scss/helpers' as h;
+@use "../../scss/helpers" as h;
 
-.Header{
-	width: 100%;
+.Header {
+	font-family: "Nunito", sans-serif;
 	height: 70px;
 	margin-bottom: 50px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
 
-	@include h.min-md{
+	@include h.min-md {
 		height: 80px;
-		background:#FAFAFA;
+		background: #fafafa;
 		margin-bottom: 30px;
 		padding-bottom: 120px;
-
 	}
 
-	&-logo{
-		width: 244px;
-		height: 30px;
-		margin: 20px 0 0 24px;
+	&-logo {
+		@include h.size(244px,30px);
+		margin-top: 20px;
 
-		@include h.min-md{
-			width: 350px;
-			height: 43px;
-			margin: 16px 0 0 40px;
+		@include h.min-md {
+			@include h.size(350px,43px);
+			margin-top: 16px;
 		}
 	}
 
-	&-cart{
-		width:30px;
-		height: 26px;
-		margin: 23px 21px 0 0 ;
+	&-cart {
+		@include h.size(30px,26px);
+		margin-top: 23px;
 
-		@include h.min-md{
+		@include h.min-md {
 			width: 33px;
 			height: 29px;
-			margin: 28px 66px 0 0 ;
+			margin-top: 28px;
 		}
-
 	}
-
 }

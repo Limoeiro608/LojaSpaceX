@@ -1,0 +1,49 @@
+@use "../../../scss/helpers" as h;
+
+.Header-nav {
+    display: none;
+
+    @include h.min-md {
+        display: block;
+        padding: 0;
+
+        &__container {
+            display: flex;
+            margin-top: 22px;
+            font-size: 14px;
+            align-items: center;
+
+            img {
+                max-width: 13px;
+                max-height: 15px;
+            }
+        }
+
+        &__first-child {
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        &__middle-child {
+            justify-content: space-between;
+            font-weight: 600;
+        }
+
+        &__last-child {
+            justify-content: end;
+            font-size: 16px;
+
+            @include h.min-lg {
+                font-size: 20px;
+                position: relative;
+                bottom: 3px;
+            }
+        }
+
+        &__way {
+            margin: 0 8px;
+            text-decoration: none;
+            color: #00518b;
+        }
+    }
+}

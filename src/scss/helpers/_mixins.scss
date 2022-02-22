@@ -15,3 +15,18 @@
     }
   }
 }
+
+@mixin truncate($width,$line){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: $width;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}
+
+@mixin size($width,$height){
+  width: $width;
+  height: $height;
+}
+

@@ -2,11 +2,11 @@
 export const Baseboard = () => {
 
     return (
-        <div className='Baseboard  text-center'>
-            <div className='container-fluid'>
+        <div className='Baseboard '>
+            <div className='container-fluid text-center'>
                 <div className='row'>
                     <div className='col'>
-                        <p>©2021 – Todos os direitos reservados</p>
+                        <span className="Baseboard-copyright">©2022 – Todos os direitos reservados</span>
                     </div>
                 </div>
             </div>

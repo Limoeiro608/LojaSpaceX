@@ -10,14 +10,14 @@
 		margin: 0;
 	}
 
-	&-Div {
+	&-Container {
 		display: flex;
 
 		@include h.min-md {
 			flex-direction: row;
 		}
 
-		&__img {
+		&__picture {
 			border-radius: 20px;
 			width: 87%;
 			margin: 23px auto;
