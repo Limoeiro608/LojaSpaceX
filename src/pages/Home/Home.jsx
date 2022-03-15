@@ -1,6 +1,6 @@
-import { Banner } from '../../components/Banner/Banner'
-import { Header } from '../../components/Header/Header'
-import { Footer } from '../../components/Footer/Footer'
+import { Banner } from '../../components/molecules/Banner/Banner'
+import { Header } from '../../components/organisms/Header/Header'
+import { Footer } from '../../components/organisms/Footer/Footer'
 
 const Home = () => {
 	return (

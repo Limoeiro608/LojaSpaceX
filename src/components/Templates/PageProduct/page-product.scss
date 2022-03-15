@@ -1,0 +1,10 @@
+@use "../../../scss/helpers" as h;
+
+.PageProduct-picture {
+    @include h.size(94%, 94%);
+
+    @include h.min-md {
+        max-width: 644px;
+        max-height: 644px;
+    }
+}

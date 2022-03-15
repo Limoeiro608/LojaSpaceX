@@ -1,6 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './scss/main.scss';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './scss/main.scss'
+import './utils'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 

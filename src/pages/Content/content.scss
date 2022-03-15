@@ -1,0 +1,83 @@
+@use "../../scss/helpers" as h;
+
+.PLP-picture {
+    display: none;
+
+    @include h.min-md {
+        display: block;
+        width: 100%;
+        max-width: 1366px;
+        position: relative;
+        bottom: 33px;
+        vertical-align: middle;
+    }
+}
+
+.PLP-container {
+    margin: 0 14px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+
+    &__categories {
+        display: none;
+    }
+
+    .products-bestSellers {
+        display: none;
+    }
+
+    &__products {
+        display: contents;
+    }
+
+    &__btnBox {
+        display: none;
+    }
+
+    @include h.min-md {
+        gap: 0;
+        margin: 0;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: 90% 10%;
+        grid-template-areas:
+            "categories products products products"
+            "categories btn btn btn";
+
+        &__categories {
+            display: block;
+            height: 100%;
+            grid-area: categories;
+            //background: gray;
+        }
+
+        .products-bestSellers {
+            display: block;
+            font-weight: 700;
+            font-size: 32px;
+            color: #00518b;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        &__products {
+            height: 100%;
+            grid-area: products;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            //background: green;
+        }
+
+        &__btnBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include h.size(100%, 100%);
+            color: #777777;
+            grid-area: btn;
+            margin: auto;
+            //background: yellow;
+        }
+    }
+}

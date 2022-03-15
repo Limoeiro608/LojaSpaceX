@@ -1,11 +1,10 @@
 import { Header } from '../../components/organisms/Header/Header'
 import { Footer } from '../../components/organisms/Footer/Footer'
-import { PageProduct } from '../../components/Templates/PageProduct/PageProduct'
+import { WhoWeAre } from '../../components/Templates/WhoWeAre/WhoWeAre'
 
-const PDP = () => {
+  const Content = () => {
 	return (
 		<>
-
 			<header>
 				<div className='Region col-12'>
 					<Header />
@@ -13,15 +12,16 @@ const PDP = () => {
 			</header>
 			<main>
 				<div className='Region col-12'>
-					<PageProduct/>
+					<WhoWeAre/>
 				</div>
 			</main>
 			<footer>
-				<div className='Region col-12'></div>
-				<Footer />
+				<div className='Region col-12'>
+					<Footer />
+				</div>
 			</footer>
 		</>
 	)
 }
 
-export default PDP
+export default Content

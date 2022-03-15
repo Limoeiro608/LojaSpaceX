@@ -8,14 +8,18 @@
 
 // components
 
-@use  '../components/Header/Header';
-@use  '../components/Footer/footer';
-@use  '../components/Banner/banner';
-@use '../components/Header/NavMenu/navmenu';
-@use '../components/Footer/MenuFooterItem/menu-footer-item';
-@use '../components/Footer/Baseboard/baseboard';
-@use '../components/Footer/PaymentsMetods/payments-metods';
-@use '../components/PageProduct/HeaderProduct/header-product';
-@use '../components/PageProduct/ImgProduct/img-product';
-@use '../components/PageProduct/InformationP/information-product';
-@use '../components/Button/button';
+@use  '../components/organisms/Header/header';
+@use  '../components/organisms/Footer/footer';
+@use  '../components/molecules/Banner/banner';
+@use '../components/organisms/Header/NavMenu/navmenu';
+@use '../components/organisms/Footer/MenuFooterItem/menu-footer-item';
+@use '../components/organisms/Footer/Baseboard/baseboard';
+@use '../components/organisms/Footer/PaymentsMetods/payments-metods';
+@use '../components/molecules/ContentProduct/content-product';
+@use '../components/Templates/PageProduct/page-product';
+@use '../components/Templates/WhoWeAre/who-we-are';
+@use '../components/organisms/InformationProduct/information-product';
+@use '../components/atoms/Button/button';
+@use '../components/organisms/CardProduct/card-product';
+@use '../components/molecules/Categories/categories';
+@use '../pages/PLP/plp';
