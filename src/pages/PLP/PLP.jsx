@@ -31,16 +31,19 @@ const PLP = () => {
 							<div className='PLP-container__categories'>
 								<Categories />
 							</div>
-							<div className='PLP-container__products'>
+							<div>
 								<div className='products-bestSellers'>
 									<h3>Mais Vendidos</h3>
 								</div>
-								{cards}
-							</div>
-							<div className='PLP-container__btnBox'>
+								<div className='PLP-container__products'>
+									{cards}
+								</div>
+								<div className='PLP-container__btnBox'>
 								<p>12 de 40<br />produtos</p>
 								<Button className={'Button'}>Carregar Mais</Button>
 							</div>
+							</div>
+							
 						</div>
 					</div>
 				</Container>

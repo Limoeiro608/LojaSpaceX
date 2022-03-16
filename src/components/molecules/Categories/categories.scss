@@ -5,7 +5,8 @@
 
     @include h.min-md {
         display: block;
-        @include h.size(313px, 463px);
+        @include h.size(80%, 323px);
+        max-width: 313px;
         background: #ffffff;
         box-shadow: 0px 1px 4px #444469;
         border-radius: 8px;
@@ -54,5 +55,9 @@
             background-position: 95% 10px;
             transition: 0.3s;
         }
+    }
+
+    @include h.min-lg{
+        @include h.size(80%, 463px);
     }
 }

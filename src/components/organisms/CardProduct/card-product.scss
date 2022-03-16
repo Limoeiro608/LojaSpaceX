@@ -1,14 +1,21 @@
 @use "../../../scss/helpers" as h;
 
 .CardProduct {
-    margin: auto auto 20px auto;
-    @include h.size(160px, 280px);
+    text-align: center;
+    min-width: 160px;
+    height: 280px;
+    padding: 4px 20px 25px 20px;
     box-shadow: 0px 1px 1px #c7c7cc;
     border-radius: 8px;
 
     @include h.min-md {
-        @include h.size(248px, 391px);
-        
+        height: 250px;
+        padding: 8px 37px 32px 37px;
+    }
+
+    @include h.min-lg {
+        height: 345px;
+        // padding: 8px 37px 32px 37px;
     }
 
     &-way {
@@ -16,32 +23,30 @@
     }
 
     &-picture {
-        @include h.size(120px, 120px);
-        margin: 4px 20px 24px 20px;
+        @include h.size(100%, 120px);
+          max-width:120px ;
 
         @include h.min-md {
-            @include h.size(173px, 200px);
-            margin: 8px 37px 40px 37px;
+            @include h.size(100%, 100%);
+            max-width: 173px;
         }
     }
 
     &-content {
-        text-align: center;
-        
         &__title {
             color: #1b1b1c;
             font-size: 16px;
             @include h.truncate(400px, 2);
-            
         }
+
         &__last {
             font-size: 11px !important;
             line-height: 21px;
             text-decoration-line: line-through;
             color: #636367;
             margin: 16px 0 4px 0;
-
         }
+
         &__current {
             color: #00518b;
             font-size: 16px;
