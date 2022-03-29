@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import ImgCafeteira from '../../../assets/products/id-2.png'
 
+
 export const CardProduct = () => {
 
-    const product = {
-        id: 2,
-        active: true,
-        title: "Cafeteira Expresso Oster Cappuccino",
-        smallDescription: null,
-        oldPrice: "800,00",
-        price: "599,00"
+    const product ={
+            id: 2,
+            title: "Cafeteira Expresso Oster Cappuccino",
+            smallDescription: null,
+            oldPrice: "800,00",
+            price: "599,00"
     }
 
     return (
@@ -28,4 +28,5 @@ export const CardProduct = () => {
             </Link>
         </article>
     );
+
 }

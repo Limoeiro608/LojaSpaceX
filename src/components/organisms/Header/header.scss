@@ -1,43 +1,63 @@
 @use "../../../scss/helpers" as h;
 
 .Header {
+	height: 80px;
 	font-family: "Nunito", sans-serif;
-	height: 70px;
-	margin-bottom: 50px;
+	background: #fafafa;
+	margin-bottom: 30px;
+	padding-bottom: 120px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
 
-	@include h.min-md {
-		height: 80px;
-		background: #fafafa;
-		margin-bottom: 30px;
-		padding-bottom: 120px;
-	}
-
 	&-logo {
-		@include h.size(244px, 30px);
-		margin-top: 20px;
-
-		@include h.min-md {
-			@include h.size(350px, 43px);
-			margin-top: 16px;
-		}
+		@include h.size(350px, 43px);
+		margin-top: 16px;
 	}
 
 	&-cart {
-		@include h.size(30px, 26px);
-		margin-top: 26px;
+		@include h.size(33px, 29px);
+		margin-top: 28px;
+	}
 
-		@include h.min-md {
-			@include h.size(33px, 29px);
-			margin-top: 28px;
+
+.Header-nav {
+	&__container {
+		display: flex;
+		margin-top: 22px;
+		font-size: 14px;
+		align-items: center;
+		img {
+			max-width: 13px;
+			max-height: 15px;
 		}
 	}
 
-	&-menuMobile {
-		border: none;
-		background: transparent;
-		margin-top: 26px;
-		position: absolute;
-		right: 9px;
+	&__way {
+		margin: 0 8px;
+		text-decoration: none;
+		color: #00518b;
+		font-weight: 600;
 	}
+
+	&__first-child {
+		font-size: 11px;
+		font-weight: 600;
+	}
+
+	&__middle-child {
+		justify-content: space-between;
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	&__last-child {
+		justify-content: end;
+		font-size: 13px;
+
+		@include h.min-lg {
+			font-size: 20px;
+			position: relative;
+			bottom: 3px;
+		}
+	}
+}
 }

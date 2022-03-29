@@ -1,7 +1,7 @@
 @use "../../../scss/helpers" as h;
 
 .Footer {
-	background: #00518b;	
+	background-color: #00518b;	
 	margin-top: 50px;
 	font-family: 'Open Sans', sans-serif;
 
@@ -18,9 +18,6 @@
 			margin: 85px 0px 0 0px;
 		}
 	}
-
-
-
 	&__content {
 		background: #181818;
 		color: #fff;
