@@ -10,6 +10,8 @@
 
 @use  '../components/organisms/Header/header';
 @use  '../components/organisms/Header/header-mobile';
+@use  '../components/organisms/Header/Navbar/navbar-mobile';
+@use  '../components/organisms/Header/Navbar/navbar';
 @use  '../components/organisms/Footer/footer';
 @use  '../components/molecules/Banner/banner';
 @use '../components/organisms/Footer/MenuFooterItem/menu-footer-item';

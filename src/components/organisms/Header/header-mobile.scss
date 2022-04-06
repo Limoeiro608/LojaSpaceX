@@ -23,37 +23,5 @@
         position: relative;
         right: 20px;
     }
-
-    .Header-nav {
-        position: relative;
-        z-index: 1000;
-        background-color: #b5cadac0;
-        top: 25px;
-        padding: 35px;
-        border-radius: 20px;
-        &__container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            img {
-                max-width: 13px;
-                max-height: 15px;
-            }
-        }
-
-        &__way {
-            margin: 0 8px;
-            text-decoration: none;
-            color: #00518b;
-            font-weight: 600;
-        }
-    }
-}
-.active {
-    display: block;
 }
 
-.inactive {
-    display: none;
-}

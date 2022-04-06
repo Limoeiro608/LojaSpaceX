@@ -5,7 +5,7 @@
     min-width: 160px;
     height: 280px;
     padding: 4px 20px 25px 20px;
-    box-shadow: 0px 1px 1px #c7c7cc;
+    box-shadow: 0px 1px 4px #444469;
     border-radius: 8px;
 
     @include h.min-md {
@@ -28,6 +28,7 @@
 
         @include h.min-md {
             @include h.size(100%, 100%);
+            min-height: 120px;
             max-width: 173px;
         }
     }

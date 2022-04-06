@@ -4,23 +4,28 @@ import { Container } from 'reactstrap'
 import { Categories } from '../../../components/molecules/Categories/Categories'
 import { Button } from '../../../components/atoms/Button/Button'
 import callAccount from '../../../utils'
+import products from '../../../data'
 
 callAccount(10, 20, 30)
 
 export const MainContentPLP = () => {
 
-    var cards = [];
-    for (let index = 0; index < 12; index++) {
-        cards.push(<CardProduct/>)
-    }
-
+    const dataProduct = products.map((product) => {
+        return (
+            <CardProduct key={product.key}
+                img={product.img}
+                title={product.title}
+                oldPrice={product.oldPrice}
+                price={product.price}
+            />
+        )
+    })
 
     return (
         <Container>
             <img className='PLP-picture' src={ImgBanner} alt='banner' />
             <div className='Region col-12'>
                 <div className='PLP-container'>
-
                 </div>
                 <div className='PLP-container'>
                     <div className='PLP-container__categories'>
@@ -31,9 +36,7 @@ export const MainContentPLP = () => {
                             <h3>Mais Vendidos</h3>
                         </div>
                         <div className='PLP-container__products'>
-                            {cards.map((item) =>(
-                                <CardProduct key={item} />
-                            ))}
+                            {dataProduct}
                         </div>
                         <div className='PLP-container__btnBox'>
                             <p>12 de 40<br />produtos</p>
@@ -45,10 +48,3 @@ export const MainContentPLP = () => {
         </Container>
     )
 }
-const product = [{
-    id: 2,
-    title: "Cafeteira Expresso Oster Cappuccino",
-    smallDescription: null,
-    oldPrice: "800,00",
-    price: "599,00"
-}]
