@@ -9,16 +9,6 @@ import products from '../../../data'
 export const MainContentPLP = () => {
 
     callAccount(10, 20, 30)
-    const dataProduct = products.map((product) => {
-        return (
-            <CardProduct key={product.id}
-                img={product.img}
-                title={product.title}
-                oldPrice={product.oldPrice}
-                price={product.price}
-            />
-        )
-    })
 
     return (
         <section className='Plp-container'>
@@ -36,7 +26,14 @@ export const MainContentPLP = () => {
                                 <h3>Mais Vendidos</h3>
                             </div>
                             <div className='PLP-container__products'>
-                                {dataProduct}
+                                {products.map((product) => 
+                                    <CardProduct key={product.id}
+                                        img={product.img}
+                                        title={product.title}
+                                        oldPrice={product.oldPrice}
+                                        price={product.price}
+                                    />
+                                )}
                             </div>
                             <div className='PLP-container__btnBox'>
                                 <p>12 de 40<br />produtos</p>
