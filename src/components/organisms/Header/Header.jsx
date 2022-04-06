@@ -1,4 +1,3 @@
-import React from 'react'
 import ImgLogo from '../../../assets/img/space-logo.png'
 import ImgCart from '../../../assets/img/cart.png'
 import {Navbar} from '../Header/Navbar/Navbar'

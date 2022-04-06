@@ -1,5 +1,4 @@
 
-
 export const PaymentsMetods = (props) =>{
 
     function reconheceMetod(props){

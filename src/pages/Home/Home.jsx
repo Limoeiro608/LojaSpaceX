@@ -4,9 +4,6 @@ import { Footer } from '../../components/organisms/Footer/Footer'
 import MediaQuery from 'react-responsive'
 import { HeaderMobile } from '../../components/organisms/Header/HeaderMobile'
                         
-                            
-                        
-
 const Home = () => {
 	return (
 		<>

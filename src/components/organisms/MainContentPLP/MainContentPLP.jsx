@@ -6,13 +6,12 @@ import { Button } from '../../../components/atoms/Button/Button'
 import callAccount from '../../../utils'
 import products from '../../../data'
 
-callAccount(10, 20, 30)
-
 export const MainContentPLP = () => {
 
+    callAccount(10, 20, 30)
     const dataProduct = products.map((product) => {
         return (
-            <CardProduct key={product.key}
+            <CardProduct key={product.id}
                 img={product.img}
                 title={product.title}
                 oldPrice={product.oldPrice}
@@ -22,29 +21,31 @@ export const MainContentPLP = () => {
     })
 
     return (
-        <Container>
-            <img className='PLP-picture' src={ImgBanner} alt='banner' />
-            <div className='Region col-12'>
-                <div className='PLP-container'>
-                </div>
-                <div className='PLP-container'>
-                    <div className='PLP-container__categories'>
-                        <Categories />
+        <section className='Plp-container'>
+            <Container>
+                <img className='PLP-picture' src={ImgBanner} alt='banner' />
+                <div className='Region col-12'>
+                    <div className='PLP-container'>
                     </div>
-                    <div>
-                        <div className='products-bestSellers'>
-                            <h3>Mais Vendidos</h3>
+                    <div className='PLP-container'>
+                        <div className='PLP-container__categories'>
+                            <Categories />
                         </div>
-                        <div className='PLP-container__products'>
-                            {dataProduct}
-                        </div>
-                        <div className='PLP-container__btnBox'>
-                            <p>12 de 40<br />produtos</p>
-                            <Button className={'Button'}>Carregar Mais</Button>
+                        <div>
+                            <div className='products-bestSellers'>
+                                <h3>Mais Vendidos</h3>
+                            </div>
+                            <div className='PLP-container__products'>
+                                {dataProduct}
+                            </div>
+                            <div className='PLP-container__btnBox'>
+                                <p>12 de 40<br />produtos</p>
+                                <Button className={'Button'}>Carregar Mais</Button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </Container>
+            </Container>
+        </section>
     )
 }

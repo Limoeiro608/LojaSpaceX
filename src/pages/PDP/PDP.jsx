@@ -4,7 +4,6 @@ import { PageProduct } from '../../components/organisms/PageProduct/PageProduct'
 import MediaQuery from 'react-responsive'
 import { HeaderMobile } from '../../components/organisms/Header/HeaderMobile'
 
-
 const PDP = () => {
 	return (
 		<>

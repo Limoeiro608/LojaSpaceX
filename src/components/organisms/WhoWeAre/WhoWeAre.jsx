@@ -4,7 +4,7 @@ export const WhoWeAre = () => {
 
     return (
         <Container>
-            <div>
+            <div className="WhoWeAre">
                 <h1>Quem somos?</h1>
                 <section>
                     <article>

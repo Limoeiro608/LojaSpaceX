@@ -4,7 +4,6 @@ import { WhoWeAre } from '../../components/organisms/WhoWeAre/WhoWeAre'
 import MediaQuery from 'react-responsive'
 import { HeaderMobile } from '../../components/organisms/Header/HeaderMobile'
 
-
 const Content = () => {
 	return (
 		<>

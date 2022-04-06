@@ -7,27 +7,22 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
-library.add(fas)
+import products from '../../../data'
+
+
 
 export const PageProduct = () => {
-
+    
+    library.add(fas)
     const [hide, setHide] = useState(false)
-
-    const product = {
-        id: 1,
-        active: true,
-        title: "Capacete Espacial Lorem Ipsum Dolor Sit",
-        smallDescription: "Embalagem de 1200g",
-        oldPrice: "999,90",
-        price: "890,00"
-    }
+    const product = products[0]
 
     return (
         <Container>
             <section className='PageProduct'>
                 <div className='row'>
                     <div className='col-md-7'>
-                        <img className='PageProduct-picture' src={ImgHelmet} alt='capacete' />
+                        <img className='PageProduct-picture' src={product.img} alt='capacete' />
                     </div>
                     <div className='col-md-5'>
                         <div>

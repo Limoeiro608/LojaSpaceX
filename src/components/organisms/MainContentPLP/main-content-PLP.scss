@@ -1,5 +1,10 @@
 @use "../../../scss/helpers" as h;
-
+   
+.Plp-container{
+    background-color: #fbfbfb;
+    // background-color: greenyellow;
+    padding-bottom: 50px;
+    padding-top: 30px;
 .PLP-picture {
     display: none;
 
@@ -64,4 +69,5 @@
             margin: 50px auto 60px auto;
         }
     }
+}
 }

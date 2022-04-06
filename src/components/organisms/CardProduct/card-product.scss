@@ -1,11 +1,13 @@
 @use "../../../scss/helpers" as h;
 
 .CardProduct {
+    background-color: #fff;
+    // background-color: rgba(230, 230, 63, 0.616);
     text-align: center;
     min-width: 160px;
     height: 280px;
     padding: 4px 20px 25px 20px;
-    box-shadow: 0px 1px 4px #444469;
+    box-shadow: 0px 1px 1px #C7C7CC;
     border-radius: 8px;
 
     @include h.min-md {
@@ -15,7 +17,6 @@
 
     @include h.min-lg {
         height: 345px;
-        // padding: 8px 37px 32px 37px;
     }
 
     &-way {
