@@ -11,21 +11,21 @@ export const MainContentPLP = () => {
     callAccount(10, 20, 30)
 
     return (
-        <section className='Plp-container'>
+        <section className='PLP-container'>
             <Container>
                 <img className='PLP-picture' src={ImgBanner} alt='banner' />
                 <div className='Region col-12'>
-                    <div className='PLP-container'>
+                    <div className='PLP-box'>
                     </div>
-                    <div className='PLP-container'>
-                        <div className='PLP-container__categories'>
+                    <div className='PLP-box'>
+                        <div className='PLP-box__categories'>
                             <Categories />
                         </div>
                         <div>
                             <div className='products-bestSellers'>
                                 <h3>Mais Vendidos</h3>
                             </div>
-                            <div className='PLP-container__products'>
+                            <div className='PLP-box__products'>
                                 {products.map((product) => 
                                     <CardProduct key={product.id}
                                         img={product.img}
@@ -35,9 +35,9 @@ export const MainContentPLP = () => {
                                     />
                                 )}
                             </div>
-                            <div className='PLP-container__btnBox'>
+                            <div className='PLP-box__btnBox'>
                                 <p>12 de 40<br />produtos</p>
-                                <Button className={'Button'}>Carregar Mais</Button>
+                                <Button className={'Button Button--fontInter'}>Carregar Mais</Button>
                             </div>
                         </div>
                     </div>

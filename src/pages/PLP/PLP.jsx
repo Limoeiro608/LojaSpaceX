@@ -4,6 +4,7 @@ import { MainContentPLP } from '../../components/organisms/MainContentPLP/MainCo
 import MediaQuery from 'react-responsive'
 import { HeaderMobile } from '../../components/organisms/Header/HeaderMobile'
 
+
 const PDP = () => {
 	return (
 		<>

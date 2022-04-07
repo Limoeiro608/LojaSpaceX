@@ -2,21 +2,22 @@
 
 .CardProduct {
     background-color: #fff;
-    // background-color: rgba(230, 230, 63, 0.616);
     text-align: center;
     min-width: 160px;
-    height: 280px;
+    height: 250px;
     padding: 4px 20px 25px 20px;
     box-shadow: 0px 1px 1px #C7C7CC;
     border-radius: 8px;
 
-    @include h.min-md {
-        height: 250px;
-        padding: 8px 37px 32px 37px;
+    @include h.min-md{
+        width: 310px;
+        margin: 0 auto;
     }
 
     @include h.min-lg {
-        height: 345px;
+        width: 228px;
+        height: 391px;
+        padding-top: 8px;
     }
 
     &-way {
@@ -24,13 +25,10 @@
     }
 
     &-picture {
-        @include h.size(100%, 120px);
-          max-width:120px ;
+        @include h.size(120px, 120px);
 
-        @include h.min-md {
-            @include h.size(100%, 100%);
-            min-height: 120px;
-            max-width: 173px;
+        @include h.min-lg {
+            @include h.size(173px, 200px);
         }
     }
 
@@ -38,7 +36,13 @@
         &__title {
             color: #1b1b1c;
             font-size: 16px;
+            height: 32px;
             @include h.truncate(400px, 2);
+            margin-top: 8px;
+
+            @include h.min-md{
+                margin-top: 20px;
+            }
         }
 
         &__last {

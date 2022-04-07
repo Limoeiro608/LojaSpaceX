@@ -4,6 +4,9 @@ export const InformationP = () => {
 
     return (
         <>
+            <div>
+                <h2 className="DetailsProduct-title">Informações do produto</h2>
+            </div>
             <DetailsProduct subtitle="Visão Geral">
                 <p className="DetailsProduct-paragraph">
                     O sistema Pantene Micelar Purifica & Hidrata é ideal para cabelos oleosos e opacos nas raízes. As Micelas são pequenas moléculas de limpeza que atraem impurezas como um ímã, para uma purificação delicada sem deixar o cabelo seco ou com sensação áspera.

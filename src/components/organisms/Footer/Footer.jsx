@@ -19,7 +19,7 @@ export const Footer = () => {
                         </div>
                         <div className=' col-md-3 col-lg-3 text-md-start'>
                             <div className='MenuFooter'>
-                                <h2 className='MenuFooter-subtatile'>Institucional</h2>
+                                <h2 className='MenuFooter-subtatile'>INSTITUCIONAL</h2>
                                 <ul className='MenuFooter-list'>
                                     <MenuFooterItem href='#' a='Termos de uso' />
                                     <MenuFooterItem href='#' a='Política de Privacidade' />
@@ -30,7 +30,7 @@ export const Footer = () => {
                         </div>
                         <div className='col-md-5 col-lg-6 text-md-start'>
                             <div className='MenuFooter'>
-                                <h2 className='MenuFooter-subtatile'>Minha Conta</h2>
+                                <h2 className='MenuFooter-subtatile'>MINHA CONTA</h2>
                                 <ul className='MenuFooter-list'>
                                     <MenuFooterItem href='#' a='Meu perfil' />
                                     <MenuFooterItem href='#' a='Meus pedidos' />

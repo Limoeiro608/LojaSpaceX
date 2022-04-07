@@ -46,9 +46,6 @@ export const PageProduct = () => {
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <h2 className="DetailsProduct-title">Detalhes do produto</h2>
-                    </div>
                     <InformationP />
                 </div>
             </section>

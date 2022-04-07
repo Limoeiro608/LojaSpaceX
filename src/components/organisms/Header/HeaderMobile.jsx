@@ -8,13 +8,13 @@ export const HeaderMobile = () => {
         <div className="HeaderMobile">
             <div className='container'>
                 <div className='row'>
-                    <div className='col-1'>
+                    <div className='col-2 text-start'>
                         <img className='HeaderMobile-cart' src={ImgCart} alt='Cart' />
                     </div>
-                    <div className='col-10 text-center'>
+                    <div className='col-8 text-center'>
                         <img className='HeaderMobile-logo' src={ImgLogo} alt='logo' />
                     </div>
-                    <div className='col-1'>
+                    <div className='col-2 text-end'>
                         <button className='HeaderMobile-menu'><img src={ImgMenu} alt='Menu' /></button>
                     </div>
                 </div>
