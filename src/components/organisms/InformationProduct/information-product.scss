@@ -1,0 +1,27 @@
+@use "../../../scss/helpers" as h;
+
+.DetailsProduct {
+    font-family: "Inter", sans-serif;
+
+    &-title {
+        font-family: 'Inter';
+        font-weight: bold;
+        font-size: 24px;
+        color: #00518b;
+        margin: 40px 0 20px 0;
+    }
+
+    &-container {
+        margin: 25px auto;
+    }
+
+    &-subtitle {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    &-paragraph {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

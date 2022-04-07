@@ -1,0 +1,52 @@
+@use "../../../../scss/helpers" as h;
+
+.MenuFooter {
+    margin-bottom: 42px;
+
+    @include h.min-md{
+        margin-bottom: 0;
+    }
+
+    &-subtatile {
+        font-family: 'Exo';
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+
+        @include h.min-md {
+            margin-top: 50px;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+    }
+
+    &-list{
+        padding: 0;
+    }
+
+    &-item {
+        margin: 15px 0;
+        height: 25px;
+
+        @include h.min-md {
+            margin: 8px 0;
+        }
+
+        &__way {
+            text-decoration: none;
+            color: #fafafa !important;
+            font-size: 18px;
+            font-weight: 400;
+
+            &:hover {
+                color: #fff;
+                transition-duration: 1s;
+            }
+
+            @include h.min-md {
+                font-size: 12px;
+            }
+        }
+    }
+}

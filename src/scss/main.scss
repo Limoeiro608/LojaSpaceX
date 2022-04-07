@@ -5,17 +5,24 @@
 // base
 @use './base/reset';
 @use './base/normalize';
+@use './base/globals';
 
 // components
 
-@use  '../components/Header/Header';
-@use  '../components/Footer/footer';
-@use  '../components/Banner/banner';
-@use '../components/Header/NavMenu/navmenu';
-@use '../components/Footer/MenuFooterItem/menu-footer-item';
-@use '../components/Footer/Baseboard/baseboard';
-@use '../components/Footer/PaymentsMetods/payments-metods';
-@use '../components/PageProduct/HeaderProduct/header-product';
-@use '../components/PageProduct/ImgProduct/img-product';
-@use '../components/PageProduct/InformationP/information-product';
-@use '../components/Button/button';
+@use  '../components/organisms/Header/header';
+@use  '../components/organisms/Header/header-mobile';
+@use  '../components/organisms/Header/Navbar/navbar-mobile';
+@use  '../components/organisms/Header/Navbar/navbar';
+@use  '../components/organisms/Footer/footer';
+@use  '../components/molecules/Banner/banner';
+@use '../components/organisms/Footer/MenuFooterItem/menu-footer-item';
+@use '../components/organisms/Footer/Baseboard/baseboard';
+@use '../components/organisms/Footer/PaymentsMetods/payments-metods';
+@use '../components/molecules/ContentProduct/content-product';
+@use '../components/organisms/PageProduct/page-product';
+@use '../components/organisms/WhoWeAre/who-we-are';
+@use '../components/organisms/InformationProduct/information-product';
+@use '../components/atoms/Button/button';
+@use '../components/organisms/CardProduct/card-product';
+@use '../components/molecules/Categories/categories';
+@use '../components/organisms/MainContentPLP/main-content-PLP';

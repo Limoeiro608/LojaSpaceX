@@ -1,0 +1,76 @@
+@use "../../../scss/helpers" as h;
+
+.PLP-container {
+    font-family: "Nunito Sans";
+    background-color: #fbfbfb;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+    .PLP-picture {
+        display: none;
+
+        @include h.min-lg {
+            display: block;
+            width: 100%;
+            position: relative;
+            bottom: 33px;
+            vertical-align: middle;
+        }
+    }
+    .PLP-box {
+        display: grid;
+
+        &__categories {
+            display: none;
+        }
+
+        .products-bestSellers {
+            display: none;
+        }
+
+        &__products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 13px;
+        }
+
+        &__btnBox {
+            display: none;
+        }
+
+        @include h.min-lg {
+            grid-template-columns: 2fr 3fr;
+
+            &__categories {
+                display: block;
+            }
+
+            .products-bestSellers {
+                display: block;
+                margin-bottom: 40px;
+                font-weight: 700;
+                font-size: 32px;
+                color: #00518b;
+                width: 100%;
+            }
+
+            &__products {
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
+                gap: 20px;
+            }
+
+            &__btnBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #777777;
+                width: 140px;
+                margin: 50px auto 60px auto;
+            }
+        }
+        @include h.min-xl{
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }

@@ -1,0 +1,28 @@
+@use "../../../scss/helpers" as h;
+
+.HeaderMobile {
+    font-family: "Nunito", sans-serif;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+
+    &-logo {
+        @include h.size(200px, 30px);
+        margin-top: 20px;
+        @include h.min-sm {
+            @include h.size(244px, 30px);
+        }
+    }
+
+    &-cart {
+        @include h.size(30px, 26px);
+        margin-top: 26px;
+    }
+
+    &-menu {
+        border: none;
+        background: transparent;
+        margin-top: 28px;
+    }
+}
+

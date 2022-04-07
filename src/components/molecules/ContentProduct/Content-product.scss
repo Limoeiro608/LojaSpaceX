@@ -1,0 +1,60 @@
+@use "../../../scss/helpers" as h;
+
+.ContentProduct {
+    font-family: "Exo", sans-serif;
+
+    @include h.min-md {
+        margin-top: 50px;
+        max-width: 423px;
+        max-height: 544px;
+    }
+
+    &-title {
+        color: #115292;
+        font-size: 28px;
+        font-weight: 600px;
+
+        @include h.min-md {
+            @include h.truncate(423px, 2);
+        }
+    }
+
+    &-weight {
+        font-weight: 500;
+        font-size: 13px;
+        color: #666666;
+    }
+
+    &-prices {
+        display: flex;
+        align-items: center;
+        margin: 25px 0 45px 0;
+
+        &__last {
+            font-size: 16px !important;
+            line-height: 21px;
+            text-decoration-line: line-through;
+            color: #b3b3b3;
+        }
+
+        &__current {
+            font-size: 28px;
+            line-height: 36px;
+            color: #115292;
+            font-weight: bold;
+        }
+    }
+
+    &-howManyTimes {
+        font-weight: 500;
+        font-size: 14px;
+        position: relative;
+        bottom: 40px;
+    }
+
+    &-textJS {
+        color: #115292;
+        font-size: 16px;
+        max-width: 423px;
+    }
+}

@@ -1,0 +1,34 @@
+@use "../../../scss/helpers" as h;
+
+.Footer {
+	background-color: #00518b;	
+	font-family: 'Open Sans', sans-serif;
+
+		@include h.min-md {
+			height: 340px;
+			padding-bottom: 0px;
+		}
+
+	&-logo {
+		@include h.size(226px !important,28px !important);
+		margin: 53px 0;
+
+		@include h.min-md {
+			margin: 85px 0px 0 0px;
+		}
+	}
+	&__content {
+		background: #181818;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 400;
+		height: 60px;
+		padding: 18px 0;
+
+		@include h.min-md {
+			font-size: 11px;
+			height: 40px;
+			padding: 12px 0;
+		}
+	}
+}
