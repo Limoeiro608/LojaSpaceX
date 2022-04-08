@@ -14,7 +14,6 @@ export const Slide1 = () => {
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation
-                pagination
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >

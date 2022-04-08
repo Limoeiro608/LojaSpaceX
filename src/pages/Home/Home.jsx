@@ -5,6 +5,8 @@ import MediaQuery from 'react-responsive'
 import { HeaderMobile } from '../../components/organisms/Header/HeaderMobile'
 import { Slide1 } from '../../components/molecules/Slide/Slide1'
 import { Slide2 } from '../../components/molecules/Slide/Slide2'
+import {Video} from '../../components/atoms/Video/Video'
+import ImgThumb1 from '../../assets/img/thumb-mail-1.png'
 
 const Home = () => {
 	return (
@@ -25,6 +27,9 @@ const Home = () => {
 				</div>
 				<div className='Region col-12'>
 					<Slide2 />
+				</div>
+				<div className='Region col-12 container d-flex'>
+					<Video src={'https://youtu.be/GeDjSagSFeg?t=33'} width={'50%'} height={'100%'}  poster={ImgThumb1} />
 				</div>
 				<div className='Region col-12'>
 					<Banner />
