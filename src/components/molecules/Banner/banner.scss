@@ -1,8 +1,8 @@
 @use '../../../scss/helpers' as h;
 
 .Banner {
-	margin: 10% auto;
 	padding: 50px 0;
+	background-color: #fff;
 	
 	@include h.min-md {
 		display: flex;
