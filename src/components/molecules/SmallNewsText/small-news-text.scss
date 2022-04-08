@@ -1,0 +1,30 @@
+@use "../../../scss/helpers" as h;
+
+.SmallNewsText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 0;
+    color: #115292;
+    background-color: #fff;
+
+    &-title {
+        font-family: "Exo", sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        margin-left: 90px;
+    }
+
+    &-paragraphs{
+        font-family: 'Nunito Sans';
+        font-size: 16px;  
+        margin-left: 90px; 
+        line-height: 24px;
+    }
+
+    &-btnBox{
+        width:220px;
+        margin-left: 90px;
+    }
+}

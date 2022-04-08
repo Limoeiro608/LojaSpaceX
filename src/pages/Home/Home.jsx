@@ -7,6 +7,7 @@ import { Slide1 } from '../../components/molecules/Slide/Slide1'
 import { Slide2 } from '../../components/molecules/Slide/Slide2'
 import {Video} from '../../components/atoms/Video/Video'
 import ImgThumb1 from '../../assets/img/thumb-mail-1.png'
+import { SmallNewsText } from '../../components/molecules/SmallNewsText/SmallNewsText'
 
 const Home = () => {
 	return (
@@ -28,8 +29,11 @@ const Home = () => {
 				<div className='Region col-12'>
 					<Slide2 />
 				</div>
-				<div className='Region col-12 container d-flex'>
+				<div className='Region col-12 container d-flex mt-5 mb-5'>
 					<Video src={'https://youtu.be/GeDjSagSFeg?t=33'} width={'50%'} height={'100%'}  poster={ImgThumb1} />
+					<SmallNewsText newsText='Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit .'
+					newsParagraphs='Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit .'
+					 />
 				</div>
 				<div className='Region col-12'>
 					<Banner />
