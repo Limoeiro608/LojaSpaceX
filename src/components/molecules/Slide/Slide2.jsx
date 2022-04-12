@@ -1,4 +1,4 @@
-import { Navigation, Pagination} from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -13,24 +13,45 @@ import ImgSlideIbm from '../../../assets/img/slide-ibm.png'
 
 export const Slide2 = () => {
     return (
-        <div className='container p-0'>
-            <Swiper
-                modules={[Navigation, Pagination]}
-                spaceBetween={58}
-                slidesPerView={5}
-                navigation
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                <SwiperSlide><img src={ImgSlideNasdaq} alt='Slide 1' /></SwiperSlide>
-                <SwiperSlide><img src={ImgSlideAmazon} alt='Slide 2' /></SwiperSlide>
-                <SwiperSlide><img src={ImgSlideApple} alt='Slide 3' /></SwiperSlide>
-                <SwiperSlide><img src={ImgSlideNasa} alt='Slide 4' /></SwiperSlide>
-                <SwiperSlide><img src={ImgSlideIbm} alt='Slide 5' /></SwiperSlide>
-                <SwiperSlide><img src={ImgSlideAmazon} alt='Slide 6' /></SwiperSlide>
-                <SwiperSlide><img src={ImgSlideNasa} alt='Slide 7' /></SwiperSlide>
-                <SwiperSlide><img src={ImgSlideNasdaq} alt='Slide 8' /></SwiperSlide>
-            </Swiper>
+        <div className='container'>
+            <div className='Slide2'>
+                <Swiper
+                breakpoints={{
+                        576: {
+                            width: 576,
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            width: 768,
+                            slidesPerView: 3,
+                        },
+                        992: {
+                            width: 992,
+                            slidesPerView: 4,
+                        },
+                        1200: {
+                            width: 1200,
+                            slidesPerView: 5,
+                        },
+                    }}
+                    modules={[Navigation, Pagination]}
+                    spaceBetween={0} 
+                    navigation
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                      slidesPerView={1}
+                    // width='480'
+                >
+                    <SwiperSlide><img src={ImgSlideNasdaq} alt='Slide 1' /></SwiperSlide>
+                    <SwiperSlide><img src={ImgSlideAmazon} alt='Slide 2' /></SwiperSlide>
+                    <SwiperSlide><img src={ImgSlideApple} alt='Slide 3' /></SwiperSlide>
+                    <SwiperSlide><img src={ImgSlideNasa} alt='Slide 4' /></SwiperSlide>
+                    <SwiperSlide><img src={ImgSlideIbm} alt='Slide 5' /></SwiperSlide>
+                    <SwiperSlide><img src={ImgSlideAmazon} alt='Slide 6' /></SwiperSlide>
+                    <SwiperSlide><img src={ImgSlideNasa} alt='Slide 7' /></SwiperSlide>
+                    <SwiperSlide><img src={ImgSlideNasdaq} alt='Slide 8' /></SwiperSlide>
+                </Swiper>
+            </div>
         </div>
     )
 }

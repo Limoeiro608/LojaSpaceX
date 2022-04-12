@@ -5,8 +5,10 @@ import MediaQuery from 'react-responsive'
 import { HeaderMobile } from '../../components/organisms/Header/HeaderMobile'
 import { Slide1 } from '../../components/molecules/Slide/Slide1'
 import { Slide2 } from '../../components/molecules/Slide/Slide2'
-import {Video} from '../../components/atoms/Video/Video'
+import { Video } from '../../components/atoms/Video/Video'
 import ImgThumb1 from '../../assets/img/thumb-mail-1.png'
+import ImgThumb2 from '../../assets/img/thumb-mail-2.png'
+import VideoRocket from '../../assets/video/rocket.mp4'
 import { SmallNewsText } from '../../components/molecules/SmallNewsText/SmallNewsText'
 
 const Home = () => {
@@ -26,16 +28,30 @@ const Home = () => {
 				<div className='Region col-12'>
 					<Slide1 />
 				</div>
-				<div className='Region col-12'>
+				<div className='Region col-12 mt-5'>
 					<Slide2 />
 				</div>
-				<div className='Region col-12 container d-flex mt-5 mb-5'>
-					<Video src={'https://youtu.be/GeDjSagSFeg?t=33'} width={'50%'} height={'100%'}  poster={ImgThumb1} />
+				<section className='Region col-12 container d-lg-flex mt-5 mb-5'>
+					<Video src={VideoRocket} width={'100%'} height={'100%'} poster={ImgThumb1} />
 					<SmallNewsText newsText='Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit .'
-					newsParagraphs='Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit .'
-					 />
-				</div>
-				<div className='Region col-12'>
+						newsParagraphs='Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit .'
+					/>
+				</section>
+				<section className='Region col-12 container d-lg-flex mt-5 mb-5'>
+					<MediaQuery maxWidth={990}>
+						<Video src={VideoRocket} width={'100%'} height={'100%'} poster={ImgThumb2} />
+						<SmallNewsText newsText='Dragão Retorna à Terra'
+							newsParagraphs='Dragon completa a primeira missão civil em órbita'
+						/>
+					</MediaQuery>
+					<MediaQuery minWidth={991}>
+						<SmallNewsText newsText='Dragão Retorna à Terra'
+							newsParagraphs='Dragon completa a primeira missão civil em órbita'
+						/>
+						<Video src={VideoRocket} width={'100%'} height={'100%'} poster={ImgThumb2} />
+					</MediaQuery>
+				</section>
+				<div className='Region col-12 container'>
 					<Banner />
 				</div>
 			</main>

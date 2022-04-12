@@ -1,0 +1,67 @@
+@use "../../../scss/helpers" as h;
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-image: url(../../../assets/img/arrow-slide.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.swiper-button-next {
+    transform: rotate(-180deg);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    display: none !important;
+}
+
+.Slide2 {
+    max-width: 1210px;
+    margin: auto;
+
+    .swiper {
+        text-align: center;
+        
+        @include h.min-sm{
+            text-align: inherit;
+            padding: 0 100px;
+        }
+
+        @include h.min-md{
+            padding: 0 80px;
+        }
+
+        @include h.min-lg{
+            padding: 0 55px;
+        }
+    }
+
+    @include h.min-sm{
+        .swiper-container {
+        width: 576px;
+      }
+    }
+
+    @include h.min-md{
+        .swiper-container {
+        width: 768px;
+      }
+    }
+
+    @include h.min-lg{
+        .swiper-container {
+        width:992px;
+      }
+    }
+
+    @include h.min-xl{
+        .swiper-container {
+        width:1200px;
+      }
+    }
+    
+}

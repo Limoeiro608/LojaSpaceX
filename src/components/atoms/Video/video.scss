@@ -1,0 +1,9 @@
+@use "../../../scss/helpers" as h;
+
+.Video{
+    width: 100%;
+
+    @include h.min-lg {
+        width: 50%;
+    }
+}

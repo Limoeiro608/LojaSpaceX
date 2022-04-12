@@ -1,5 +1,5 @@
 export const Video = (props) => {
     return(
-        <video src={props.src} width={props.width} height={props.height} controls autoPlay muted poster={props.poster}></video>
+        <video className='Video' src={props.src} width={props.width} height={props.height} autoPlay muted loop poster={props.poster}></video>
     )
 }
