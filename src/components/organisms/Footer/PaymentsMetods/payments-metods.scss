@@ -1,6 +1,6 @@
 @use "../../../../scss/helpers" as h;
 
-.FooterPayments {
+.FooterRow {
     display: none;
 
     @include h.min-md {
@@ -30,6 +30,10 @@
                 margin: 0;
             }
             
+        }
+
+        .SocialMedia{
+            margin: 0px 5px;
         }
     }
 }

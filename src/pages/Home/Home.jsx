@@ -1,8 +1,6 @@
 import { Banner } from '../../components/molecules/Banner/Banner'
-import { Header } from '../../components/organisms/Header/Header'
 import { Footer } from '../../components/organisms/Footer/Footer'
 import MediaQuery from 'react-responsive'
-import { HeaderMobile } from '../../components/organisms/Header/HeaderMobile'
 import { Slide1 } from '../../components/molecules/Slide/Slide1'
 import { Slide2 } from '../../components/molecules/Slide/Slide2'
 import { Video } from '../../components/atoms/Video/Video'
@@ -10,18 +8,14 @@ import ImgThumb1 from '../../assets/img/thumb-mail-1.png'
 import ImgThumb2 from '../../assets/img/thumb-mail-2.png'
 import VideoRocket from '../../assets/video/rocket.mp4'
 import { SmallNewsText } from '../../components/molecules/SmallNewsText/SmallNewsText'
+import {HeaderDefault} from '../../layouts/HeaderDefault'
 
 const Home = () => {
 	return (
 		<section className='Home-container'>
 			<header>
 				<div className='Region col-12'>
-					<MediaQuery maxWidth={990}>
-						<HeaderMobile />
-					</MediaQuery>
-					<MediaQuery minWidth={991}>
-						<Header />
-					</MediaQuery>
+					<HeaderDefault/>
 				</div>
 			</header>
 			<main>

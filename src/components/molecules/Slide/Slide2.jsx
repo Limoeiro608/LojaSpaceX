@@ -10,7 +10,6 @@ import ImgSlideApple from '../../../assets/img/slide-apple.png'
 import ImgSlideNasa from '../../../assets/img/slide-nasa.png'
 import ImgSlideIbm from '../../../assets/img/slide-ibm.png'
 
-
 export const Slide2 = () => {
     return (
         <div className='container'>
@@ -40,7 +39,6 @@ export const Slide2 = () => {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                       slidesPerView={1}
-                    // width='480'
                 >
                     <SwiperSlide><img src={ImgSlideNasdaq} alt='Slide 1' /></SwiperSlide>
                     <SwiperSlide><img src={ImgSlideAmazon} alt='Slide 2' /></SwiperSlide>

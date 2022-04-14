@@ -5,7 +5,8 @@ import Boleto from '../../../assets/img/boleto.png';
 import Bitcoin from '../../../assets/img/bitcoin.png';
 import MasterCard from '../../../assets/img/master-card.png';
 import { Baseboard } from './Baseboard/Baseboard';
-
+import mediaJs from '../../../socialMedia';
+import { SocialMedia } from './SocialMedia/SocialMedia';
 
 export const Footer = () => {
 
@@ -38,17 +39,33 @@ export const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='FooterPayments'>
+                    <div className='FooterRow'>
                         <div className='row'>
                             <div className='col'>
-                                <div className='text-end'>
-                                    <h3 className='FooterPayments-title '>Formas de Pagamento</h3>
+                                <div>
+                                    <h3 className='FooterRow-title'>Formas de Pagamento</h3>
                                 </div>
-                                <div className='FooterPayments-list'>
-                                    <ul className=' d-flex justify-content-end'>
+                                <div className='FooterRow-list'>
+                                    <ul className=' d-flex'>
                                         <PaymentsMetods href='#' alt='boleto' src={Boleto} />
                                         <PaymentsMetods href='#' alt='bitcoin' src={Bitcoin} />
                                         <PaymentsMetods href='#' alt='master card' src={MasterCard} />
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='col'>
+                                <div className='text-end'>
+                                    <h3 className='FooterRow-title'>Mídias sociais</h3>
+                                </div>
+                                <div className='FooterRow-list'>
+                                    <ul className='d-flex justify-content-end'>
+                                        {mediaJs.map((media) =>
+                                            <SocialMedia key={media.id}
+                                                img={media.img}
+                                                alt={media.alt}
+                                                href={media.href}
+                                            />
+                                        )}
                                     </ul>
                                 </div>
                             </div>

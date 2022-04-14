@@ -1,5 +1,4 @@
 import { Button } from '../../atoms/Button/Button'
-import ImgHelmet from '../../../assets/products/id-1.png'
 import { ContentProduct } from '../../molecules/ContentProduct/ContentProduct'
 import { Container } from 'reactstrap'
 import { InformationP } from '../InformationProduct/InformationProduct'
@@ -8,8 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import products from '../../../data'
-
-
+import { Select } from '../../atoms/PlaceHolder/Select'
 
 export const PageProduct = () => {
     
@@ -33,6 +31,9 @@ export const PageProduct = () => {
                                 currentPrice={product.price}
                                 howManyTimes={'5 x R$ 178,00 s/ juros no cartão de crédito'}
                             />
+                        </div>
+                        <div>
+                            <Select/>
                         </div>
                         <div>
                             <Button className={'Button Button--green Button--fontExo'}><FontAwesomeIcon icon="cart-shopping" />&ensp; Adicionar ao Carrinho</Button>
