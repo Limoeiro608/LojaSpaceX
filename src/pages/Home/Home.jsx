@@ -1,13 +1,13 @@
-import { Banner } from '../../components/molecules/Banner/Banner'
-import { Footer } from '../../components/organisms/Footer/Footer'
+import {Banner} from '../../components/molecules/Banner/Banner'
+import {Footer} from '../../components/organisms/Footer/Footer'
 import MediaQuery from 'react-responsive'
-import { Slide1 } from '../../components/molecules/Slide/Slide1'
-import { Slide2 } from '../../components/molecules/Slide/Slide2'
-import { Video } from '../../components/atoms/Video/Video'
+import {BannerSlide} from '../../components/molecules/BannerSlide/BannerSlide'
+import {BannerSlideMarks} from '../../components/molecules/BannerSlide/BannerSlideMarks'
+import {Video} from '../../components/atoms/Video/Video'
 import ImgThumb1 from '../../assets/img/thumb-mail-1.png'
 import ImgThumb2 from '../../assets/img/thumb-mail-2.png'
 import VideoRocket from '../../assets/video/rocket.mp4'
-import { SmallNewsText } from '../../components/molecules/SmallNewsText/SmallNewsText'
+import {SmallNewsText} from '../../components/molecules/SmallNewsText/SmallNewsText'
 import {HeaderDefault} from '../../layouts/HeaderDefault'
 
 const Home = () => {
@@ -20,10 +20,10 @@ const Home = () => {
 			</header>
 			<main>
 				<div className='Region col-12'>
-					<Slide1 />
+					<BannerSlide/>
 				</div>
 				<div className='Region col-12 mt-5'>
-					<Slide2 />
+					<BannerSlideMarks/>
 				</div>
 				<section className='Region col-12 container d-lg-flex mt-5 mb-5'>
 					<Video src={VideoRocket} width={'100%'} height={'100%'} poster={ImgThumb1} />

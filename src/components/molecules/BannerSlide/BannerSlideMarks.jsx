@@ -10,10 +10,10 @@ import ImgSlideApple from '../../../assets/img/slide-apple.png'
 import ImgSlideNasa from '../../../assets/img/slide-nasa.png'
 import ImgSlideIbm from '../../../assets/img/slide-ibm.png'
 
-export const Slide2 = () => {
+export const BannerSlideMarks = () => {
     return (
         <div className='container'>
-            <div className='Slide2'>
+            <div className='BannerSlideMarks'>
                 <Swiper
                 breakpoints={{
                         576: {
