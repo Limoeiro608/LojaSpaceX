@@ -1,9 +1,9 @@
-import {Video} from '../../atoms/Video/Video'
+import MediaQuery from 'react-responsive'
 import ImgThumb1 from '../../../assets/img/thumb-mail-1.png'
 import ImgThumb2 from '../../../assets/img/thumb-mail-2.png'
 import VideoRocket from '../../../assets/video/rocket.mp4'
+import {Video} from '../../atoms/Video/Video'
 import {SmallNewsText} from '../../../components/molecules/SmallNewsText/SmallNewsText'
-import MediaQuery from 'react-responsive'
 
 export const NewsBanner = () => {
     return (

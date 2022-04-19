@@ -1,11 +1,11 @@
 import ImgLogo from '../../../assets/img/space-logo-footer.png';
-import { MenuFooterItem } from './MenuFooterItem/MenuFooterItem';
-import { PaymentsMetods } from './PaymentsMetods/PaymentsMetods';
+import mediaJs from '../../../socialMedia';
 import Boleto from '../../../assets/img/boleto.png';
 import Bitcoin from '../../../assets/img/bitcoin.png';
 import MasterCard from '../../../assets/img/master-card.png';
+import { MenuFooterItem } from './MenuFooterItem/MenuFooterItem';
+import { PaymentsMetods } from './PaymentsMetods/PaymentsMetods';
 import { Baseboard } from './Baseboard/Baseboard';
-import mediaJs from '../../../socialMedia';
 import { SocialMedia } from './SocialMedia/SocialMedia';
 
 export const Footer = () => {

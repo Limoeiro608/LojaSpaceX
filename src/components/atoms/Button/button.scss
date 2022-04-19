@@ -16,7 +16,7 @@
 
     &:hover {
         transition-duration: 0.7s;
-        background: #00518b;
+        @extend %blue;
         color: #fff;
     }
 
