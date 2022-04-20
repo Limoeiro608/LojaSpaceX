@@ -1,5 +1,4 @@
 import ImgLogo from '../../../assets/img/space-logo-footer.png';
-import mediaJs from '../../../socialMedia';
 import Boleto from '../../../assets/img/boleto.png';
 import Bitcoin from '../../../assets/img/bitcoin.png';
 import MasterCard from '../../../assets/img/master-card.png';
@@ -59,13 +58,7 @@ export const Footer = () => {
                                 </div>
                                 <div className='FooterRow-list'>
                                     <ul className='d-flex justify-content-end'>
-                                        {mediaJs.map((media) =>
-                                            <SocialMedia key={media.id}
-                                                img={media.img}
-                                                alt={media.alt}
-                                                href={media.href}
-                                            />
-                                        )}
+                                        <SocialMedia/>
                                     </ul>
                                 </div>
                             </div>

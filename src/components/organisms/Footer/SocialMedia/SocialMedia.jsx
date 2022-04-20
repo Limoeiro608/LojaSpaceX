@@ -1,5 +1,16 @@
-export const SocialMedia = (props) =>{
+import mediaJs from '../../../../socialMedia';
+
+export const SocialMedia = () =>{
     return(
-        <li><a className='FooterRow-list__item SocialMedia' href={props.href} ><img src={props.img} alt={props.alt} /></a></li>
+        <>
+            {mediaJs.map((media) => 
+                <li>
+                    <a className='FooterRow-list__item SocialMedia' href={media.href} >
+                        <img src={media.img} alt={media.alt} />
+                    </a>
+                </li>
+            )}
+            
+        </>
     )
 }
