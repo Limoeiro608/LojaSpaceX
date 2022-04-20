@@ -1,7 +1,4 @@
 import ImgLogo from '../../../assets/img/space-logo-footer.png';
-import Boleto from '../../../assets/img/boleto.png';
-import Bitcoin from '../../../assets/img/bitcoin.png';
-import MasterCard from '../../../assets/img/master-card.png';
 import { MenuFooterItem } from './MenuFooterItem/MenuFooterItem';
 import { PaymentsMetods } from './PaymentsMetods/PaymentsMetods';
 import { Baseboard } from './Baseboard/Baseboard';
@@ -46,9 +43,7 @@ export const Footer = () => {
                                 </div>
                                 <div className='FooterRow-list'>
                                     <ul className=' d-flex'>
-                                        <PaymentsMetods href='#' alt='boleto' src={Boleto} />
-                                        <PaymentsMetods href='#' alt='bitcoin' src={Bitcoin} />
-                                        <PaymentsMetods href='#' alt='master card' src={MasterCard} />
+                                        <PaymentsMetods/>
                                     </ul>
                                 </div>
                             </div>
