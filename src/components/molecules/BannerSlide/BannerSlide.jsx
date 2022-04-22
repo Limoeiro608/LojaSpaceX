@@ -13,6 +13,7 @@ export const BannerSlide = () => {
                 modules={[Navigation, Pagination]}
                 spaceBetween={0}
                 slidesPerView={1}
+                loop={true}
                 navigation
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}

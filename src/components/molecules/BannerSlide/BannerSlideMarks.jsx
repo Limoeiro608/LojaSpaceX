@@ -36,6 +36,7 @@ export const BannerSlideMarks = () => {
                     modules={[Navigation, Pagination]}
                     spaceBetween={0} 
                     navigation
+                    loop={true}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                       slidesPerView={1}
