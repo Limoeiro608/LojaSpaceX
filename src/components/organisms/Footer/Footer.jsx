@@ -42,7 +42,7 @@ export const Footer = () => {
                                     <h3 className='FooterRow-title'>Formas de Pagamento</h3>
                                 </div>
                                 <div className='FooterRow-list'>
-                                    <ul className=' d-flex'>
+                                    <ul className='d-flex'>
                                         <PaymentsMetods/>
                                     </ul>
                                 </div>
