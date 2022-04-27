@@ -1,6 +1,6 @@
-import paymentsJs from '../../../../paymentsMethods'
+import paymentJs from '../../../../paymentMethods'
 
-export const PaymentsMetods = (props) => {
+export const PaymentMethods = (props) => {
 
     function reconheceMetod(props) {
         if (props.alt === 'boleto' || props.alt === 'bitcoin') {
@@ -22,10 +22,10 @@ export const PaymentsMetods = (props) => {
 
     return (
         <>
-            {paymentsJs.map((payments) =>
-                <li className='FooterRow-list__item'>
-                    <a href={payments.href}>
-                        <img alt={payments.alt} onClick={reconheceMetod.bind('2', props)} src={payments.src} />
+            {paymentJs.map((payment) =>
+                <li className='PaymentMethods'>
+                    <a href={payment.href}>
+                        <img alt={payment.alt} onClick={reconheceMetod.bind('2', props)} src={payment.src} />
                     </a>
                 </li>
             )}

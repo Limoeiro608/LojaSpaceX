@@ -2,7 +2,7 @@ import ImgBoleto from '../src/assets/img/boleto.png';
 import ImgBitcoin from '../src/assets/img/bitcoin.png';
 import ImgMasterCard from '../src/assets/img/master-card.png';
 
-const paymentsMethodys = [
+const paymentMethods = [
     {
         id:1,
         src:ImgBoleto,
@@ -23,4 +23,4 @@ const paymentsMethodys = [
     },
 ]
 
-export default paymentsMethodys
+export default paymentMethods

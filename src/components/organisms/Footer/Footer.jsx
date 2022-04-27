@@ -1,6 +1,6 @@
 import ImgLogo from '../../../assets/img/space-logo-footer.png';
-import { MenuFooterItem } from './MenuFooterItem/MenuFooterItem';
-import { PaymentsMetods } from './PaymentsMetods/PaymentsMetods';
+import { MenuItem } from './MenuItem/MenuItem';
+import { PaymentMethods } from './PaymentMethods/PaymentMethods';
 import { Baseboard } from './Baseboard/Baseboard';
 import { SocialMedia } from './SocialMedia/SocialMedia';
 
@@ -18,10 +18,10 @@ export const Footer = () => {
                             <div className='MenuFooter'>
                                 <h2 className='MenuFooter-subtatile'>INSTITUCIONAL</h2>
                                 <ul className='MenuFooter-list'>
-                                    <MenuFooterItem href='#' a='Termos de uso' />
-                                    <MenuFooterItem href='#' a='Política de Privacidade' />
-                                    <MenuFooterItem href='#' a='Formas de Pagamento' />
-                                    <MenuFooterItem href='#' a='Trocas e Devoluções' />
+                                    <MenuItem href='#' a='Termos de uso' />
+                                    <MenuItem href='#' a='Política de Privacidade' />
+                                    <MenuItem href='#' a='Formas de Pagamento' />
+                                    <MenuItem href='#' a='Trocas e Devoluções' />
                                 </ul>
                             </div>
                         </div>
@@ -29,8 +29,8 @@ export const Footer = () => {
                             <div className='MenuFooter'>
                                 <h2 className='MenuFooter-subtatile'>MINHA CONTA</h2>
                                 <ul className='MenuFooter-list'>
-                                    <MenuFooterItem href='#' a='Meu perfil' />
-                                    <MenuFooterItem href='#' a='Meus pedidos' />
+                                    <MenuItem href='#' a='Meu perfil' />
+                                    <MenuItem href='#' a='Meus pedidos' />
                                 </ul>
                             </div>
                         </div>
@@ -43,7 +43,7 @@ export const Footer = () => {
                                 </div>
                                 <div className='FooterRow-list'>
                                     <ul className='d-flex'>
-                                        <PaymentsMetods/>
+                                        <PaymentMethods/>
                                     </ul>
                                 </div>
                             </div>
