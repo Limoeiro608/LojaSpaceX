@@ -1,7 +1,7 @@
 @use "../../../scss/helpers" as h;
 
 .Footer {
-	@extend %blue;
+	background-color: #00518b; 
 	font-family: 'Open Sans', sans-serif;
 
 		@include h.min-md {
@@ -26,10 +26,7 @@
 		}
 	
 		&-subtatile {
-			font-family: 'Exo';
-			color: #fff;
-			font-size: 24px;
-			font-weight: 700;
+			@extend %subtitleExo;
 			margin-bottom: 15px;
 	
 			@include h.min-md {

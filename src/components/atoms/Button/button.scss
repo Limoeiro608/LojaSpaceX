@@ -15,8 +15,8 @@
     }
 
     &:hover {
+        background-color: #00518b;;
         transition-duration: 0.7s;
-        @extend %blue;
         color: #fff;
     }
 
