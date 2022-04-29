@@ -26,7 +26,8 @@
 		}
 	
 		&-subtatile {
-			@extend %subtitleExo;
+			@extend %white-24px-bold;
+			font-family: 'Exo';
 			margin-bottom: 15px;
 	
 			@include h.min-md {
