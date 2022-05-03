@@ -2,7 +2,7 @@
 
 .Footer {
 	background-color: #00518b;	
-	font-family: 'Open Sans', sans-serif;
+	font-family:h.$open-sans;
 
 		@include h.min-md {
 			height: 340px;

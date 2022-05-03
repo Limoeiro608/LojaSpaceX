@@ -37,7 +37,7 @@ export const MainContentPLP = () => {
                             </div>
                             <div className='PLP-box__btnBox'>
                                 <p>12 de 40<br />produtos</p>
-                                <Button className={'Button Button--fontInter'}>Carregar Mais</Button>
+                                <Button className={'Button Button--fontExo'}>Carregar Mais</Button>
                             </div>
                         </div>
                     </div>

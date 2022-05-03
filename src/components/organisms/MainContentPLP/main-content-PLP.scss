@@ -1,7 +1,7 @@
 @use "../../../scss/helpers" as h;
 
 .PLP-container {
-    font-family: "Nunito Sans";
+    font-family: h.$exo;
     background-color: #fbfbfb;
     padding-bottom: 50px;
     padding-top: 30px;

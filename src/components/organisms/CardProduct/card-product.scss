@@ -3,8 +3,8 @@
 .CardProduct {
     background-color: #fff;
     text-align: center;
-    min-width: 160px;
-    height: 250px;
+    width: 160px;
+    margin: 0 auto;
     padding: 4px 20px 25px 20px;
     box-shadow: 0px 1px 1px #C7C7CC;
     border-radius: 8px;
@@ -24,11 +24,21 @@
         text-decoration: none;
     }
 
-    &-picture {
-        @include h.size(120px, 120px);
+    &-imgContent{
+        height: 150px;
+        
 
-        @include h.min-lg {
-            @include h.size(173px, 200px);
+        @include h.min-md{
+            height: 312px;
+        }
+
+        @include h.min-lg{
+            height: 255px;
+        }
+
+        &_picture {
+            @include h.size(100%, 100%);
+            object-fit: contain;
         }
     }
 
