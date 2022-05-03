@@ -15,7 +15,7 @@
     }
 
     &-title {
-        font-family: "Exo", sans-serif;
+        font-family: h.$exo;
         font-weight: 600;
         font-size: 18px;
         margin: 10px 0 15px 0;
@@ -28,7 +28,7 @@
     }
 
     &-paragraphs {
-        font-family: "Nunito Sans";
+        font-family: h.$open-sans;
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 15px;
