@@ -15,9 +15,10 @@
 @use  '../components/organisms/Header/Navbar/navbar';
 @use  '../components/organisms/Footer/footer';
 @use  '../components/molecules/Banner/banner';
-@use '../components/organisms/Footer/MenuFooterItem/menu-footer-item';
+@use '../components/organisms/Footer/MenuItem/menu-item';
 @use '../components/organisms/Footer/Baseboard/baseboard';
-@use '../components/organisms/Footer/PaymentsMetods/payments-metods';
+@use '../components/organisms/Footer/PaymentMethods/payment-methods';
+@use '../components/organisms/Footer/SocialMedia/social-media';
 @use '../components/molecules/ContentProduct/content-product';
 @use '../components/organisms/PageProduct/page-product';
 @use '../components/organisms/WhoWeAre/who-we-are';
@@ -26,3 +27,7 @@
 @use '../components/organisms/CardProduct/card-product';
 @use '../components/molecules/Categories/categories';
 @use '../components/organisms/MainContentPLP/main-content-PLP';
+@use '../pages/Home/home';
+@use '../components/molecules/BannerSlide/banner-slide';
+@use '../components/atoms/Video/video';
+@use '../components/molecules/SmallNewsText/small-news-text';

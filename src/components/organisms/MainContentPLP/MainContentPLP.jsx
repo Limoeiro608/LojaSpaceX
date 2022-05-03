@@ -1,10 +1,10 @@
-import { CardProduct } from '../../../components/organisms/CardProduct/CardProduct'
+import callAccount from '../../../utils'
+import products from '../../../data'
 import ImgBanner from '../../../assets/img/banner-plp.png'
+import { CardProduct } from '../../../components/organisms/CardProduct/CardProduct'
 import { Container } from 'reactstrap'
 import { Categories } from '../../../components/molecules/Categories/Categories'
 import { Button } from '../../../components/atoms/Button/Button'
-import callAccount from '../../../utils'
-import products from '../../../data'
 
 export const MainContentPLP = () => {
 
