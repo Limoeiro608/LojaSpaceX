@@ -1,8 +1,8 @@
 @use "../../../scss/helpers" as h;
 
 .Footer {
-	background-color: #00518b; 
-	font-family: 'Open Sans', sans-serif;
+	background-color: #00518b;	
+	font-family:h.$open-sans;
 
 		@include h.min-md {
 			height: 340px;

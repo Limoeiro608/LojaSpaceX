@@ -5,8 +5,8 @@ export const CardProduct = (props) => {
     return (
         <article className='CardProduct'>
             <Link className='CardProduct-way' to='PDP'>
-                <figure>
-                    <img className='CardProduct-picture' src={props.img} alt='imagem do produto' />
+                <figure className='CardProduct-imgContent'>
+                    <img className='CardProduct-imgContent_picture' src={props.img} alt='imagem do produto' />
                 </figure>
                 <div className='CardProduct-content'>
                     <h3 className='CardProduct-content__title'>{props.title}</h3>

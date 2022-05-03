@@ -37,12 +37,12 @@
     }
 
     &--fontExo{
-        font-family: 'Exo', sans-serif;
+        font-family: h.$exo;
         font-weight: 500;
     }
 
     &--fontInter{
-        font-family: 'Inter', sans-serif;
+        font-family: h.$inter;
         font-weight: 700;
     }
 }

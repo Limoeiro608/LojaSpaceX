@@ -1,7 +1,7 @@
 @use "../../../scss/helpers" as h;
 
 .HeaderMobile {
-    font-family: "Nunito", sans-serif;
+    font-family:h.$open-sans;
     height: 70px;
     background-color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
