@@ -1,8 +1,8 @@
 import { Footer } from '../../components/organisms/Footer/Footer'
-import { PageProduct } from '../../components/organisms/PageProduct/PageProduct'
+import { ProductsList } from '../../components/organisms/ProductsList/ProductsList'
 import {HeaderDefault} from '../../layouts/HeaderDefault'
 
-const PDP = () => {
+const MyCart = () => {
 	return (
 		<>
 			<header>
@@ -11,17 +11,17 @@ const PDP = () => {
 				</div>
 			</header>
 			<main>
-				<div className='Region col-12'>
-					<PageProduct />
+                <div className='Region col-12'>
+                    <ProductsList/>
 				</div>
 			</main>
 			<footer>
 				<div className='Region col-12'>
-					<Footer />
-				</div>
+                    <Footer />
+                </div>
 			</footer>
 		</>
 	)
 }
 
-export default PDP
+export default MyCart

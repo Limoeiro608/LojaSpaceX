@@ -1,0 +1,49 @@
+@use "../../../scss/helpers" as h;
+
+.ProductTr {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+    &-product{
+
+        &__picture {
+            @include h.size(56px, 56px);
+            object-fit: contain;
+            vertical-align: middle;
+            margin: 29px 36px 29px 18px;
+        }
+
+        &__title {
+            color: #363636;
+            font-size: 14px;
+            padding: 16px 0;
+            // @include h.truncate(300px, 1);
+        }
+    }
+
+    &-boxPrices {
+        font-weight: 600;
+        vertical-align: middle;
+
+        &__last {
+            font-size: 12px !important;
+            line-height: 16px;
+            text-decoration-line: line-through;
+            color: #767676;
+        }
+
+        &__current {
+            color: #000;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &-total{
+        vertical-align: middle;
+        font-weight: 600;
+        color: #000;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

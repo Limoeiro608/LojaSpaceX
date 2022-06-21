@@ -3,6 +3,7 @@ import Home from './pages/Home/Home'
 import PDP from './pages/PDP/PDP'
 import PLP from './pages/PLP/PLP'
 import Content from './pages/Content/Content'
+import MyCart from './pages/MyCart/MyCart'
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Route path='/PDP' exact component={PDP} />
 				<Route path='/PLP' exact component={PLP} />
 				<Route path='/Content' exact component={Content} />
+				<Route path='/MyCart' exact component={MyCart} />
 			</Switch>
 		</Router>
 	);
