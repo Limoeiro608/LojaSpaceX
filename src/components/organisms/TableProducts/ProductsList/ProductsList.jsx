@@ -1,15 +1,14 @@
-import { Container } from "reactstrap"
-import { ProductTr } from "../../molecules/ProductTr/ProductTr"
-import products from '../../../data'
+import { ProductTr } from "../ProductTr/ProductTr"
+import products from '../../../../data'
 
 export const ProductsList = () => {
     return (
-        <Container>
-            <h1 className="ProductList-title">Meu Carrinho</h1>
+        <div className="container">
             <table className="ProductList">
+                <caption className="ProductList-title">Meu Carrinho</caption>
                 <thead className="ProductList-head">
                     <th className="ProductList-head__product">Produto</th>
-                    <th>Quantidade</th>
+                    <th className="d-none d-md-block">Quantidade</th>
                     <th>Unitário</th>
                     <th>Total</th>
                 </thead>
@@ -24,6 +23,6 @@ export const ProductsList = () => {
                     )}
                 </tbody>
             </table>
-        </Container>
+        </div>
     )
 }

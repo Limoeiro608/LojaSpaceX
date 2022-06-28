@@ -22,7 +22,6 @@
 @use '../components/molecules/ContentProduct/content-product';
 @use '../components/organisms/PageProduct/page-product';
 @use '../components/organisms/WhoWeAre/who-we-are';
-@use '../components/organisms/ProductsList/product-list';
 @use '../components/organisms/InformationProduct/information-product';
 @use '../components/atoms/Button/button';
 @use '../components/organisms/CardProduct/card-product';
@@ -32,4 +31,6 @@
 @use '../components/molecules/BannerSlide/banner-slide';
 @use '../components/atoms/Video/video';
 @use '../components/molecules/SmallNewsText/small-news-text';
-@use '../components/molecules/ProductTr/product-tr';
+@use '../components/organisms/TableProducts/ProductsList/products-list';
+@use '../components/organisms/TableProducts/ProductTr/product-tr';
+@use '../components/molecules/CartTotal/cart-total';

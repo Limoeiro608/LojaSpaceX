@@ -1,23 +1,41 @@
-@use "../../../scss/helpers" as h;
+@use "../../../../scss/helpers" as h;
 
 .ProductTr {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 
     &-product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include h.min-md{
+            display: table-cell;
+        }
 
         &__picture {
             @include h.size(56px, 56px);
             object-fit: contain;
             vertical-align: middle;
-            margin: 29px 36px 29px 18px;
+            margin-top: 12px;
+        
+            @include h.min-md{
+                margin: 29px 18px;
+            }
         }
 
         &__title {
+            vertical-align: middle;
             color: #363636;
             font-size: 14px;
-            padding: 16px 0;
-            // @include h.truncate(300px, 1);
+            padding: 12px 0;
+            max-width: 57%;
+            display: flex;
+            text-align: center;
+
+            @include h.min-sm{
+                display: -webkit-inline-box;
+            }
         }
     }
 
