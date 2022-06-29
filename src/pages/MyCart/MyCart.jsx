@@ -11,15 +11,20 @@ const MyCart = () => {
 			<header>
 				<div className='Region col-12'>
 					<HeaderDefault/>
-					<Notification/>
-					<Notification color='danger'/>
-					<Notification color='warning'/>
+					
+					
 				</div>
 			</header>
 			<main>
-                <div className='Region container col-12 d-lg-flex'>
-                    <ProductsList/>
-					<CartTotal/>
+                <div className='Region container col-12 '>
+					<br/>
+					{/* <Notification/>
+					<Notification color='danger'/> */}
+					<Notification color='warning'/>
+					<div className='d-lg-flex'>
+						<ProductsList/>
+						<CartTotal/>
+					</div> 
 				</div>
 			</main>
 			<footer>

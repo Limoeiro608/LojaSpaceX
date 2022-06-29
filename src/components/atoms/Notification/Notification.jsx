@@ -1,9 +1,9 @@
-import { Alert } from "reactstrap"
+import { UncontrolledAlert } from 'reactstrap'
 
 export const Notification = (props) => {
     return (
-        <Alert color={props.color}>
+        <UncontrolledAlert color={props.color}>
             This is a {props.color} alert—check it out!
-        </Alert>
+        </UncontrolledAlert>
     )
 }
