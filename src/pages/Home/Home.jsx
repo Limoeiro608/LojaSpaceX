@@ -3,7 +3,7 @@ import ImgThumb2 from '../../assets/img/thumb-mail-2.png'
 import VideoRocket from '../../assets/video/rocket.mp4'
 import { Banner } from '../../components/molecules/Banner/Banner'
 import { Footer } from '../../components/organisms/Footer/Footer'
-import { BannerSlide } from '../../components/molecules/BannerSlide/BannerSlide'
+import { BannerSlideFull } from '../../components/molecules/BannerSlide/BannerSlideFull'
 import { BannerSlideMarks } from '../../components/molecules/BannerSlide/BannerSlideMarks'
 import { HeaderDefault } from '../../layouts/HeaderDefault'
 import { NewsBanner } from '../../components/organisms/NewsBanner/NewsBanner'
@@ -18,7 +18,7 @@ const Home = () => {
 			</header>
 			<main>
 				<div className='Region col-12'>
-					<BannerSlide />
+					<BannerSlideFull />
 				</div>
 				<div className='Region col-12 mt-5'>
 					<BannerSlideMarks />
