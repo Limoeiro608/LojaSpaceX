@@ -24,10 +24,7 @@ export const PageProduct = () => {
                     <div className='col-md-5'>
                         <div>
                             <ContentProduct
-                                title={product.title}
-                                weight={product.smallDescription}
-                                lastPrice={product.oldPrice}
-                                currentPrice={product.price}
+                                {...product}
                                 howManyTimes={'5 x R$ 178,00 s/ juros no cartão de crédito'}
                             />
                         </div>
