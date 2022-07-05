@@ -6,6 +6,7 @@ import { BannerSlideProducts } from '../../components/molecules/BannerSlide/Bann
 import { SwiperSlide } from 'swiper/react';
 import products from '../../data'
 import { CardProduct } from '../../components/organisms/CardProduct/CardProduct'
+import 'swiper/css/virtual';
 
 const MyCart = () => {
 	return (
@@ -15,7 +16,7 @@ const MyCart = () => {
 					<HeaderDefault />
 				</div>
 			</header>
-			<main>
+			<main className='Color-container'>
 				<div className='Region container col-12 '>
 					<section className='d-lg-flex'>
 						<ProductsList />
@@ -25,7 +26,7 @@ const MyCart = () => {
 						<BannerSlideProducts title='Produtos sugeridos'>
 							{products.map((product) =>
 								<SwiperSlide key={product.id}>
-									<CardProduct key={product.id} 
+									<CardProduct key={product.id}
                                         {...product}
                                     />
 								</SwiperSlide>

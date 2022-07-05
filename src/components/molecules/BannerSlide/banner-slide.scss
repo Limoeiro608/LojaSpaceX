@@ -21,32 +21,12 @@
 
 .BannerSlideMarks,
 .BannerSlideProducts {
-    max-width: 1210px;
-    margin: auto;
-
     &-title {
         font-weight: 600;
         font-size: 32px;
         line-height: 40px;
         color: #00518b;
         margin: 40px 0;
-    }
-
-    .swiper {
-        text-align: center;
-
-        @include h.min-sm {
-            text-align: inherit;
-            padding: 0 100px;
-        }
-
-        @include h.min-md {
-            padding: 0 80px;
-        }
-
-        @include h.min-lg {
-            padding: 0 55px;
-        }
     }
 
     @include h.min-sm {
@@ -72,4 +52,53 @@
             width: 1200px;
         }
     }
+
+    @include h.min-xxl {
+        .swiper-container {
+            width: 1400px;
+        }
+    }
 }
+
+.BannerSlideMarks {
+    max-width: 1210px;
+    margin: auto;
+
+    .swiper {
+        text-align: center;
+
+        @include h.min-sm {
+            text-align: inherit;
+            padding: 0 100px;
+        }
+
+        @include h.min-md {
+            padding: 0 80px;
+        }
+
+        @include h.min-lg {
+            padding: 0 55px;
+        }
+    }
+}
+.BannerSlideProducts {
+    @include h.min-lg{
+       .swiper-wrapper{
+            margin:0 -43px;
+        } 
+    }
+
+    @include h.min-xl{
+        .swiper-wrapper{
+             margin:0 -55px;
+         } 
+     }
+
+     @include h.min-xxl{
+        .swiper-wrapper{
+             margin:0 -64px;
+         } 
+     }
+      
+}
+

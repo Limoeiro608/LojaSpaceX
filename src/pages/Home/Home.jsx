@@ -10,7 +10,7 @@ import { NewsBanner } from '../../components/organisms/NewsBanner/NewsBanner'
 
 const Home = () => {
 	return (
-		<section className='Home-container'>
+		<section className='Color-container'>
 			<header>
 				<div className='Region col-12'>
 					<HeaderDefault />
