@@ -16,8 +16,9 @@ const PDP = () => {
 				</div>
 			</main>
 			<footer>
-				<div className='Region col-12'></div>
-				<Footer />
+				<div className='Region col-12'>
+					<Footer />
+				</div>
 			</footer>
 		</>
 	)

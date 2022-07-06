@@ -60,7 +60,7 @@ const products = [
         title: "Mega robo alienigena inspirado da serie perdidos no espaço",
         smallDescription: null,
         oldPrice: null,
-        price: "400000,00"
+        price: "40000,00"
     },
     {
         id: 7,

@@ -31,3 +31,6 @@
 @use '../components/molecules/BannerSlide/banner-slide';
 @use '../components/atoms/Video/video';
 @use '../components/molecules/SmallNewsText/small-news-text';
+@use '../components/organisms/TableProducts/ProductsList/products-list';
+@use '../components/organisms/TableProducts/ProductTr/product-tr';
+@use '../components/molecules/CartTotal/cart-total';
