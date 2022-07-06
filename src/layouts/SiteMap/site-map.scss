@@ -1,0 +1,32 @@
+.SiteMap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 24px;
+    color:#fff ;
+    background-color:#00518B;
+    height: 100vh;
+
+    &-title{
+        margin: 10% auto 17% auto;
+        border: 1px;
+
+        img{
+            background-color: white;
+            border-radius: 13px;
+        }
+    }
+
+    &-list{
+
+        li{
+            margin: 6px 0; 
+        }
+
+        a{
+           text-decoration: none; 
+           color:#fff ;
+        }
+    }
+}
