@@ -1,4 +1,5 @@
 import { Button } from '../../atoms/Button/Button'
+import { Link } from 'react-router-dom'
 
 export const CartTotal = () => {
     return (
@@ -20,7 +21,7 @@ export const CartTotal = () => {
             </div>
             <div>
                 <Button className={'Button Button--green Button--fontExo'}>Finalizar compra</Button>
-                <Button className={'Button Button--fontInter'}>Continuar comprando</Button>
+                <Link to='plp'><Button className={'Button Button--fontInter'}>Continuar comprando</Button></Link>
             </div>
         </section>
     )

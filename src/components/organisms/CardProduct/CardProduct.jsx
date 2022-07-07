@@ -4,7 +4,7 @@ export const CardProduct = (props) => {
 
     return (
         <article className='CardProduct'>
-            <Link className='CardProduct-way' to='PDP'>
+            <Link className='CardProduct-way' to='pdp'>
                 <figure className='CardProduct-imgContent'>
                     <img className='CardProduct-imgContent_picture' src={props.img} alt='imagem do produto' />
                 </figure>

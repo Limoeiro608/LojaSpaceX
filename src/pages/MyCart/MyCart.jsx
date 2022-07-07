@@ -27,8 +27,8 @@ const MyCart = () => {
 							{products.map((product) =>
 								<SwiperSlide key={product.id}>
 									<CardProduct key={product.id}
-                                        {...product}
-                                    />
+										{...product}
+									/>
 								</SwiperSlide>
 							)}
 						</BannerSlideProducts>

@@ -82,23 +82,24 @@
     }
 }
 .BannerSlideProducts {
-    @include h.min-lg{
-       .swiper-wrapper{
-            margin:0 -43px;
-        } 
+    .CardProduct {
+        width: 38%;
+    }
+    @include h.min-lg {
+        .swiper-wrapper {
+            margin: 0 -43px;
+        }
     }
 
-    @include h.min-xl{
-        .swiper-wrapper{
-             margin:0 -55px;
-         } 
-     }
+    @include h.min-xl {
+        .swiper-wrapper {
+            margin: 0 -55px;
+        }
+    }
 
-     @include h.min-xxl{
-        .swiper-wrapper{
-             margin:0 -64px;
-         } 
-     }
-      
+    @include h.min-xxl {
+        .swiper-wrapper {
+            margin: 0 -64px;
+        }
+    }
 }
-
