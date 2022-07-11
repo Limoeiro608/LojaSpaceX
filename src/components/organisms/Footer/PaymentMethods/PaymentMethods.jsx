@@ -23,7 +23,7 @@ export const PaymentMethods = (props) => {
     return (
         <>
             {paymentJs.map((payment) =>
-                <li className='PaymentMethods'>
+                <li className='PaymentMethods' key={payment.id}>
                     <a href={payment.href}>
                         <img alt={payment.alt} onClick={reconheceMetod.bind('2', props)} src={payment.src} />
                     </a>

@@ -15,10 +15,7 @@ export const ProductsList = () => {
                 <tbody className="ProductList-content">
                     {products.map((product) =>
                         <ProductTr key={product.id}
-                            img={product.img}
-                            title={product.title}
-                            oldPrice={product.oldPrice}
-                            price={product.price}
+                            {...product}
                         />
                     )}
                 </tbody>

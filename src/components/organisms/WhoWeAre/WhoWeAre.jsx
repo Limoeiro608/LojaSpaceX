@@ -24,7 +24,7 @@ export const WhoWeAre = () => {
                     </article>
                     <div>
                         <h5>Mais informações</h5>
-                        <p>Se você é nosso cliente, entre em contato conosco <a href="#">aqui.</a></p>
+                        <p>Se você é nosso cliente, entre em contato conosco <a href="http://localhost:3000/Content">aqui.</a></p>
                         <p >Para assuntos de imprensa, fale com </p><address>contato@spacex.com.br.</address>
                     </div>
                 </section>

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import ImgPoint from '../../../../assets/img/map-pointer.png'
 import ImgMobile from '../../../../assets/img/mobile.png'
 
@@ -9,16 +9,16 @@ export const NavbarMobile = () => {
                 <div className='col'>
                     <div>
                         <div className='NavbarMobile-container NavbarMobile-firstChild'>
-                            <img src={ImgPoint} alt='pointer' /><Link className="NavbarMobile-way" to='Home'>Informe seu<strong> CEP</strong></Link>
+                            <img src={ImgPoint} alt='pointer' /><Link className="NavbarMobile-way" to='home'>Informe seu<strong> CEP</strong></Link>
                         </div>
                     </div>
                     <div>
                         <div className='NavbarMobile-container NavbarMobile-middleChild'>
                             <ul>
-                                <li><Link className="NavbarMobile-way" to='Home'>Home</Link></li>
+                                <li><Link className="NavbarMobile-way" to='home'>Home</Link></li>
                                 <li><Link className="NavbarMobile-way" to='PDP'>Desafio PDP</Link></li>
                                 <li><Link className="NavbarMobile-way" to='PLP'>Desafio PLP</Link></li>
-                                <li><Link className="NavbarMobile-way" to='Content'>Desafio Weber Content</Link></li>
+                                <li><Link className="NavbarMobile-way" to='content'>Desafio Weber Content</Link></li>
                             </ul>
                         </div>
                     </div>

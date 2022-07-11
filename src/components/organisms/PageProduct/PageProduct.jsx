@@ -6,10 +6,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import products from '../../../data'
 
+
 export const PageProduct = () => {
-    
+
     library.add(fas)
     const [hide, setHide] = useState(false)
     const product = products[0]
@@ -24,15 +26,12 @@ export const PageProduct = () => {
                     <div className='col-md-5'>
                         <div>
                             <ContentProduct
-                                title={product.title}
-                                weight={product.smallDescription}
-                                lastPrice={product.oldPrice}
-                                currentPrice={product.price}
+                                {...product}
                                 howManyTimes={'5 x R$ 178,00 s/ juros no cartão de crédito'}
                             />
                         </div>
                         <div>
-                            <Button className={'Button Button--green Button--fontExo'}><FontAwesomeIcon icon="cart-shopping" />&ensp; Adicionar ao Carrinho</Button>
+                            <Link to='cart'><Button className={'Button Button--green Button--fontExo'}><FontAwesomeIcon icon="cart-shopping" />&ensp; Adicionar ao Carrinho</Button></Link>
                             <Button className={'Button Button--fontInter'} onClick={() => setHide(!hide)}>Adicionar a Lista de Interesses</Button>
                         </div>
                         <div className='HeaderProduct-textJS'>

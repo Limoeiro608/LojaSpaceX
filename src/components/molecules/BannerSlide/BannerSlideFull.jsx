@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import ImgSlide1 from '../../../assets/img/slide-1.png'
 
-export const BannerSlide = () => {
+export const BannerSlideFull = () => {
     return (
         <div className='container p-0'>
             <Swiper

@@ -28,10 +28,7 @@ export const MainContentPLP = () => {
                             <div className='PLP-box__products'>
                                 {products.map((product) => 
                                     <CardProduct key={product.id}
-                                        img={product.img}
-                                        title={product.title}
-                                        oldPrice={product.oldPrice}
-                                        price={product.price}
+                                        {...product}
                                     />
                                 )}
                             </div>

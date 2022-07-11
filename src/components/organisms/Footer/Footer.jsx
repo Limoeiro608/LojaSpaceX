@@ -18,10 +18,10 @@ export const Footer = () => {
                             <div className='MenuFooter'>
                                 <h2 className='MenuFooter-subtatile'>INSTITUCIONAL</h2>
                                 <ul className='MenuFooter-list'>
-                                    <MenuItem href='#' a='Termos de uso' />
-                                    <MenuItem href='#' a='Política de Privacidade' />
-                                    <MenuItem href='#' a='Formas de Pagamento' />
-                                    <MenuItem href='#' a='Trocas e Devoluções' />
+                                    <MenuItem a='Termos de uso' />
+                                    <MenuItem a='Política de Privacidade' />
+                                    <MenuItem a='Formas de Pagamento' />
+                                    <MenuItem  a='Trocas e Devoluções' />
                                 </ul>
                             </div>
                         </div>
@@ -29,8 +29,8 @@ export const Footer = () => {
                             <div className='MenuFooter'>
                                 <h2 className='MenuFooter-subtatile'>MINHA CONTA</h2>
                                 <ul className='MenuFooter-list'>
-                                    <MenuItem href='#' a='Meu perfil' />
-                                    <MenuItem href='#' a='Meus pedidos' />
+                                    <MenuItem a='Meu perfil' />
+                                    <MenuItem a='Meus pedidos' />
                                 </ul>
                             </div>
                         </div>

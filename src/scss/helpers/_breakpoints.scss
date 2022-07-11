@@ -25,7 +25,7 @@
 		@content;
 	}
 }
-
+// Extra large devices (large desktops, 1400px and up)
 @mixin min-xxl {
 	@media only screen and (min-width: var.$min-xxl) {
 		@content;
