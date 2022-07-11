@@ -2,31 +2,45 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-weight: 600;
-    font-size: 24px;
-    color:#fff ;
-    background-color:#00518B;
+    font-size: 22px;
+    background-color:#FAFAFA;
     height: 100vh;
 
     &-title{
-        margin: 10% auto 17% auto;
-        border: 1px;
+        padding:2% 1%;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        color: #00518B;;
+        background-color: #FAFAFA;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
 
         img{
-            background-color: white;
-            border-radius: 13px;
+            width: 280px;
         }
     }
 
     &-list{
+        background-color:#fff ;
+        padding: 20%;
+        border-radius: 12px;
+        margin: 5vh auto;
+        box-shadow: 0px 1px 1px #C7C7CC;
 
         li{
-            margin: 6px 0; 
+            text-align: center;
+            margin: 20px auto;
         }
 
         a{
            text-decoration: none; 
-           color:#fff ;
+           color: #00518B;
+           font-weight: 500;
+
+           &:hover{
+            color: #03375d;
+            transition: 1s;
+           }
         }
     }
 }
